@@ -260,3 +260,4 @@ Format: JSON with protocol, amount, apy, risk, reasoning
 Streamlines DeFi interactions to single button:
 
 **For Aave V3 Supply**:
+1. User selects strategy
