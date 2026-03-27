@@ -203,3 +203,4 @@ The application follows a hierarchical component structure:
 - AllocationChart: Visualizes portfolio allocation
 - RiskGauge: Displays risk scoring
 - AICopilot: AI interaction panel
+- StrategyCard: Individual strategy recommendations
