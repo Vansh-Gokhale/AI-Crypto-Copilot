@@ -374,3 +374,4 @@ Ready for expansion to 11+ networks:
 - Polygon (chainId: 137)
 - Arbitrum One (chainId: 42161)
 - Optimism (chainId: 10)
+- Base (chainId: 8453)
