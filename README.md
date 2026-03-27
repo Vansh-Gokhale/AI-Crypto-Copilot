@@ -175,3 +175,4 @@ v1/
 │       ├── tokenDiscovery.ts     # Token metadata caching
 │       └── dummyData.ts          # Mock data for testing
 │
+├── public/                        # Static assets
