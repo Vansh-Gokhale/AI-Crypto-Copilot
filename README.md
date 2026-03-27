@@ -6,3 +6,4 @@
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
 ![Wagmi](https://img.shields.io/badge/wagmi-v2-blue?logo=ethereum)
 ![Gemini AI](https://img.shields.io/badge/Gemini-2.0%20Flash-purple?logo=google)
+![Aave V3](https://img.shields.io/badge/Aave%20V3-Sepolia-9cf)
