@@ -173,3 +173,4 @@ v1/
 │   └── utils/
 │       ├── riskScorer.ts         # Risk calculation engine
 │       ├── tokenDiscovery.ts     # Token metadata caching
+│       └── dummyData.ts          # Mock data for testing
