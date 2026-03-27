@@ -198,3 +198,4 @@ The application follows a hierarchical component structure:
 - Main Content Area: All portfolio and strategy views
 
 **Third Level - Feature Components:**
+- PortfolioSummary: Displays total value and daily changes
