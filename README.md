@@ -296,3 +296,4 @@ Multi-factor risk assessment:
 - Encourages healthy portfolio mix
 - Reduces overall portfolio volatility
 
+**Final Score Calculation**:
