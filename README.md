@@ -749,3 +749,4 @@ This project is licensed under MIT License.
 - ~2,000 lines of TypeScript
 - ~10 main components
 - ~500+ lines of utility code
+- ~1,000+ lines of configuration
