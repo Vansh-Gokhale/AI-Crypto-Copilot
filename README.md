@@ -206,3 +206,4 @@ The application follows a hierarchical component structure:
 - StrategyCard: Individual strategy recommendations
 
 ---
+
