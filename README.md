@@ -19,3 +19,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 
 ---
 
+## 📋 Table of Contents
