@@ -451,3 +451,4 @@ User Action
 
 ### API Integrations
 
+**1. CoinGecko API (Free)**
