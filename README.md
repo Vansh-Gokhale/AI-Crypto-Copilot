@@ -368,3 +368,4 @@ Ready for expansion to 11+ networks:
 
 **Currently Supported**:
 - Ethereum Mainnet (chainId: 1)
+- Sepolia Testnet (chainId: 11155111)
