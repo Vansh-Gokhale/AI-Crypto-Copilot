@@ -604,3 +604,4 @@ User Action
 ## 💼 Business Model (Future)
 
 **Revenue Streams**:
+1. Premium features (advanced analytics)
