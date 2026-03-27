@@ -424,3 +424,4 @@ Portfolio Aggregation
     ├─→ calculateAllocations()
     └─→ scorePortfolioRisk()
     ↓
+Risk Scoring Engine (src/utils/riskScorer.ts)
