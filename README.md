@@ -491,3 +491,4 @@ User Action
 - CoinGecko: HTTPS only, no secrets
 - Gemini: API key stored securely (server-side in future)
 - RPC: Encrypted HTTPS connections
+- No sensitive data in URLs or logs
