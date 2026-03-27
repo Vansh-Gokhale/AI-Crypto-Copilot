@@ -314,3 +314,4 @@ Color Mapping:
 ### 5. Real-Time Pricing Integration
 
 CoinGecko API provides market data:
+
