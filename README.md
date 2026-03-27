@@ -748,3 +748,4 @@ This project is licensed under MIT License.
 **Codebase**:
 - ~2,000 lines of TypeScript
 - ~10 main components
+- ~500+ lines of utility code
