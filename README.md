@@ -413,3 +413,4 @@ Cinematic design system:
 ### Data Flow
 
 ```
+User Wallet
