@@ -525,3 +525,4 @@ User Action
 - Canvas-based charts (not SVG)
 - Tailwind CSS optimization
 
+### Network Performance
