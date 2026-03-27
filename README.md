@@ -73,3 +73,4 @@ Aureum Elite provides:
 | **One-Click Aave Deposit** | ✅ Full approval + supply flow | ❌ Navigate to app.aave.com | Save 3-5 clicks, reduce errors |
 | **Risk Scoring** | ✅ Weighted portfolio model | ❌ None | Data-driven risk assessment |
 | **Luxury UI/UX** | ✅ Gold & black design system | ❌ Generic dashboards | Premium user experience |
+| **Multi-Chain Auto-Detection** | ✅ Mainnet + Sepolia + future chains | ❌ Single chain | Seamless chain switching |
