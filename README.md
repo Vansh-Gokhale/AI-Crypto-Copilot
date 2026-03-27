@@ -666,3 +666,4 @@ This project is licensed under MIT License.
 - Google Gemini (AI intelligence)
 - Next.js (React framework)
 - Tailwind CSS (Styling)
+
