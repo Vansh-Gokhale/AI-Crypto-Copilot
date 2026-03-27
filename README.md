@@ -585,3 +585,4 @@ User Action
 - Sentiment analysis integration
 - Custom alert rules
 
+### Phase 4: Community & Social
