@@ -152,3 +152,4 @@ v1/
 │   │   └── globals.css           # Global styles (Tailwind)
 │   │
 │   ├── components/
+│   │   ├── Header.tsx            # Navigation + wallet connect
