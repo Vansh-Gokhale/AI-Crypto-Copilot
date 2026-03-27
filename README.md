@@ -397,3 +397,4 @@ Cinematic design system:
 **Risk Gauge**:
 - Speedometer style design
 - Smooth animations
+- Color transitions
