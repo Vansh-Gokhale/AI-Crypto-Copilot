@@ -221,3 +221,4 @@ Token detection uses multiple strategies:
 1. Known token list (30+ verified tokens)
 2. Wallet event scanning (future)
 3. User input validation (future)
+
