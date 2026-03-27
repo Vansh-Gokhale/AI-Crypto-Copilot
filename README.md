@@ -105,3 +105,4 @@ Aureum Elite provides:
    └─→ Generates 1-3 ranked strategy recommendations
    └─→ Strategies include: protocol, amount, expected yield, risk level
 
+4. ONE-CLICK EXECUTION
