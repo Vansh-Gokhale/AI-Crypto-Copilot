@@ -230,3 +230,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Portfolio composition (tokens and amounts)
 - Historical prices and volatility
 - Market conditions and trends
+- User risk tolerance
