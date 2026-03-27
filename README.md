@@ -379,3 +379,4 @@ Ready for expansion to 11+ networks:
 - And many more...
 
 **Chain Switching**:
+- Automatic chain detection
