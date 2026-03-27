@@ -394,3 +394,4 @@ Cinematic design system:
 - Responsive sizing
 - Color-coded by token type
 
+**Risk Gauge**:
