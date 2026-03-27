@@ -341,3 +341,4 @@ WalletConnect v2 enables seamless mobile:
 1. Click "Connect Wallet"
 2. Select wallet from list
 3. Approve in wallet popup
+4. Connected instantly
