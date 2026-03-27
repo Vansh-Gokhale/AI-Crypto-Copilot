@@ -536,3 +536,4 @@ User Action
 **API Caching**:
 - 5-minute cache for prices
 - 1-hour cache for token metadata
+- Browser local storage for persistence
