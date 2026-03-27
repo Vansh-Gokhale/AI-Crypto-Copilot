@@ -263,3 +263,4 @@ Streamlines DeFi interactions to single button:
 1. User selects strategy
 2. App checks token allowance
 3. If needed: Shows approval transaction
+4. User signs approval (if first time)
