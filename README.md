@@ -50,3 +50,4 @@ Traditional DeFi dashboards are:
 - ❌ Require manual protocol research
 - ❌ Don't work well on mobile
 - ❌ Limited to single chains
+- ❌ Generic and unintuitive
