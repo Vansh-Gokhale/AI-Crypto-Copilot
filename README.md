@@ -803,3 +803,4 @@ Our mission:
 - **MVP**: Minimum Viable Product
 - **DYOR**: Do Your Own Research
 
+### Common Questions (FAQ)
