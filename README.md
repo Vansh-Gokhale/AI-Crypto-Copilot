@@ -464,3 +464,4 @@ User Action
 - Fallback: Dummy strategies
 
 **3. Blockchain RPC**
+- Used: Alchemy, Infura, or custom
