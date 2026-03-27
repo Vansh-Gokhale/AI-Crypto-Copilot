@@ -363,3 +363,4 @@ WalletConnect v2 enables seamless mobile:
 - All WalletConnect v2 compatible wallets (200+)
 
 ### 7. Multi-Chain Architecture
+
