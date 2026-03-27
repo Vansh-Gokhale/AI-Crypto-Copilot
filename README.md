@@ -286,3 +286,4 @@ Multi-factor risk assessment:
 - Averages across all tokens in portfolio
 - Weighted by allocation percentage
 
+**Liquidity Risk (15% weight)**:
