@@ -11,3 +11,4 @@
 
 **Institutional-grade DeFi portfolio intelligence powered by AI**
 
+Real-time analytics · AI strategy generation · One-click protocol execution · Multi-chain support
