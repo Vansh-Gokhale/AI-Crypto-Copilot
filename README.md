@@ -439,3 +439,4 @@ UI Rendering
     ↓
 User Action
     └─→ Execute Strategy
+        ↓
