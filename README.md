@@ -162,3 +162,4 @@ v1/
 │   │   └── Sidebar.tsx           # Navigation sidebar
 │   │
 │   ├── hooks/
+│   │   ├── usePortfolio.ts       # Fetch + calculate portfolio data
