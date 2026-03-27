@@ -596,3 +596,4 @@ User Action
 - Institutional account management
 - Multi-signature support
 - Compliance reporting
+- Tax reporting integration
