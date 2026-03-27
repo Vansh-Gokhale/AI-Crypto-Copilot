@@ -217,3 +217,4 @@ The app supports all ERC20 tokens and native ETH:
 - **Multicall Efficiency**: Batches contract calls to reduce RPC load
 - **Fallback Handling**: Shows cached data while fetching
 
+Token detection uses multiple strategies:
