@@ -99,3 +99,4 @@ Aureum Elite provides:
    └─→ Calculates USD value, allocation %, 24h change
    └─→ Scores portfolio risk using weighted model
 
+3. AI STRATEGY GENERATION
