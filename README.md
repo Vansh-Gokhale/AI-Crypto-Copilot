@@ -268,3 +268,4 @@ Streamlines DeFi interactions to single button:
 6. Portfolio updates in real-time
 
 **Gas Optimization**:
+- Uses EIP-1559 for priority gas estimation
