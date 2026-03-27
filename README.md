@@ -344,3 +344,4 @@ WalletConnect v2 enables seamless mobile:
 4. Connected instantly
 
 **Mobile Flow**:
+1. Click "Connect Wallet"
