@@ -281,3 +281,4 @@ Multi-factor risk assessment:
 - Penalizes heavy concentration
 - Formula: 1 - (1 / sqrt(number_of_tokens) * concentration_ratio)
 
+**Volatility Risk (35% weight)**:
