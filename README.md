@@ -713,3 +713,4 @@ This project is licensed under MIT License.
 - Core portfolio display
 - Risk scoring engine
 - AI strategy generation
+- Aave integration
