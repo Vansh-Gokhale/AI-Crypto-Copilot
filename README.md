@@ -389,3 +389,4 @@ Ready for expansion to 11+ networks:
 Cinematic design system:
 
 **Allocation Donut Chart**:
+- Animated on load
