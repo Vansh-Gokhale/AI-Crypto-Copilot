@@ -199,3 +199,4 @@ The application follows a hierarchical component structure:
 
 **Third Level - Feature Components:**
 - PortfolioSummary: Displays total value and daily changes
+- AssetTable: Shows individual token holdings
