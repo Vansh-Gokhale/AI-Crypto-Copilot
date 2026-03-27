@@ -773,3 +773,4 @@ Our mission:
 1. Democratize access to institutional-grade DeFi tools
 2. Reduce complexity for average users
 3. Empower informed investment decisions
+4. Build community-driven DeFi infrastructure
