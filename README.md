@@ -63,3 +63,4 @@ Aureum Elite provides:
 - ✅ **Multi-Chain Support** - Ethereum Mainnet, Sepolia, and more
 - ✅ **Luxury UI/UX** - Gold and black design system with cinematic animations
 
+---
