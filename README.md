@@ -529,3 +529,4 @@ User Action
 
 **RPC Optimization**:
 - Multicall contracts for batching
+- Single request instead of multiple
