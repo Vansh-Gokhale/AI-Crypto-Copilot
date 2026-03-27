@@ -189,3 +189,4 @@ The application follows a hierarchical component structure:
 
 **Top Level - RootLayout:**
 - Initializes Wagmi, RainbowKit, and Query Client
+- Sets up theme and global styles
