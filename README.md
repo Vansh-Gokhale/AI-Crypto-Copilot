@@ -722,3 +722,4 @@ This project is licensed under MIT License.
 
 **Testnet Expansion**: 🔮 Planned
 - 11+ network support
+- Cross-chain aggregation
