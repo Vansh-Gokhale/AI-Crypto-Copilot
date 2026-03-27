@@ -701,3 +701,4 @@ This project is licensed under MIT License.
 - [RainbowKit Setup](https://rainbowkit.com)
 
 ### AI & Machine Learning
+- [Google Gemini API](https://ai.google.dev)
