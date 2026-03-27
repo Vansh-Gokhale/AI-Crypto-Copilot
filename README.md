@@ -565,3 +565,4 @@ User Action
 - Sepolia testnet deployment
 - Multiple wallet testing
 - Mobile device testing
+- Network failure scenarios
