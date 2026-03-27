@@ -683,3 +683,4 @@ This project is licensed under MIT License.
 - Website: www.aureumelite.com (coming soon)
 - Twitter: @aureumElite
 - Discord: Join community server
+- Email: support@aureum-elite.com
