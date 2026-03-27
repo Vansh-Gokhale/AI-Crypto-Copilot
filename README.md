@@ -753,3 +753,4 @@ This project is licensed under MIT License.
 
 **Deployment**:
 - Next.js with Vercel optimization
+- Lighthouse score: 95+ (target)
