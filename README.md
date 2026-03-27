@@ -161,3 +161,4 @@ v1/
 │   │   ├── AICopilot.tsx         # Gemini AI integration
 │   │   └── Sidebar.tsx           # Navigation sidebar
 │   │
+│   ├── hooks/
