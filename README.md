@@ -648,3 +648,4 @@ User Action
 - New features and enhancements
 - Documentation improvements
 - UI/UX refinements
+- Security audits
