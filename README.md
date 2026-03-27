@@ -771,3 +771,4 @@ This project is licensed under MIT License.
 
 Our mission:
 1. Democratize access to institutional-grade DeFi tools
+2. Reduce complexity for average users
