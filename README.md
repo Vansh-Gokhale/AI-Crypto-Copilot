@@ -29,3 +29,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Advantages Over Existing Systems](#advantages-over-existing-systems)
 - [Smart Contracts](#smart-contracts)
 - [Installation & Setup](#installation--setup)
+- [Usage Guide](#usage-guide)
