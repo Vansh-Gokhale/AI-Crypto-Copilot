@@ -380,3 +380,4 @@ Ready for expansion to 11+ networks:
 
 **Chain Switching**:
 - Automatic chain detection
+- Wallet prompts user if needed
