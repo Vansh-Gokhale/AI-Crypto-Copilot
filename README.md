@@ -231,3 +231,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Historical prices and volatility
 - Market conditions and trends
 - User risk tolerance
+
