@@ -586,3 +586,4 @@ User Action
 - Custom alert rules
 
 ### Phase 4: Community & Social
+- Portfolio sharing (anonymized)
