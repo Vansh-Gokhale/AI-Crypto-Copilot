@@ -310,3 +310,4 @@ Color Mapping:
 - 30-60: Yellow (Moderate)
 - 60-100: Red (High)
 ```
+
