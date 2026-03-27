@@ -614,3 +614,4 @@ User Action
 - All features free for MVP
 - Only pay blockchain gas costs
 - Community feedback drives priorities
+- Revenue deferred to enable growth
