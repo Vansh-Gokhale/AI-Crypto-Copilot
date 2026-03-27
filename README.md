@@ -809,3 +809,4 @@ Our mission:
 A: No. Data never leaves your browser. We use read-only calls.
 
 **Q: How are fees structured?**
+A: Currently free. Only pay blockchain gas costs.
