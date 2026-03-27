@@ -192,3 +192,4 @@ The application follows a hierarchical component structure:
 - Sets up theme and global styles
 - Provides context to all child components
 
+**Second Level - Page Components:**
