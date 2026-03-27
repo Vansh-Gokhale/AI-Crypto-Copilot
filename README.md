@@ -291,3 +291,4 @@ Multi-factor risk assessment:
 - Smaller cap = higher risk
 - Ensures ability to exit positions
 
+**Diversification Bonus (10% weight)**:
