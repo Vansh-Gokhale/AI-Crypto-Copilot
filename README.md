@@ -92,3 +92,4 @@ Aureum Elite provides:
    └─→ Choose wallet (MetaMask, Phantom, Core, Trust, etc.)
    └─→ Scan QR code on mobile OR authorize on desktop
    └─→ Grant signature (no transaction costs)
+
