@@ -287,3 +287,4 @@ Multi-factor risk assessment:
 - Weighted by allocation percentage
 
 **Liquidity Risk (15% weight)**:
+- Considers market cap of holdings
