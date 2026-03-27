@@ -456,3 +456,4 @@ User Action
 - Rate limit: 10-50 calls/minute (free tier)
 - Used for: Prices, market data, historical data
 - Fallback: Cached prices + dummy prices
+
