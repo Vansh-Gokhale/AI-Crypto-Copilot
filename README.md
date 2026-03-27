@@ -197,3 +197,4 @@ The application follows a hierarchical component structure:
 - Sidebar: Navigation menu and settings
 - Main Content Area: All portfolio and strategy views
 
+**Third Level - Feature Components:**
