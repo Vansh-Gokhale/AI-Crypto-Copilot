@@ -833,3 +833,4 @@ A: Polygon/Arbitrum/Optimism coming in Phase 2.
 **Aureum Elite - Empowering DeFi through AI**
 
 © 2024-2026 Aureum Elite. All rights reserved.
+
