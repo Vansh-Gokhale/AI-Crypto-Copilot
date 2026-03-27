@@ -262,3 +262,4 @@ Streamlines DeFi interactions to single button:
 **For Aave V3 Supply**:
 1. User selects strategy
 2. App checks token allowance
+3. If needed: Shows approval transaction
