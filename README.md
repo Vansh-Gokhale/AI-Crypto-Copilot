@@ -264,3 +264,4 @@ Streamlines DeFi interactions to single button:
 2. App checks token allowance
 3. If needed: Shows approval transaction
 4. User signs approval (if first time)
+5. App executes supply transaction
