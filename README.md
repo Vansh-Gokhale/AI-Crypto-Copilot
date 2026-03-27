@@ -339,3 +339,4 @@ WalletConnect v2 enables seamless mobile:
 
 **Desktop Flow**:
 1. Click "Connect Wallet"
+2. Select wallet from list
