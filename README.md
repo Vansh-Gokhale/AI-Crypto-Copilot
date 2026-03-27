@@ -732,3 +732,4 @@ This project is licensed under MIT License.
 - DeFi community builders
 - Aave DAO governance
 - Ethereum developers
+- Web3 security experts
