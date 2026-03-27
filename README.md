@@ -222,3 +222,4 @@ Token detection uses multiple strategies:
 2. Wallet event scanning (future)
 3. User input validation (future)
 
+### 2. AI-Powered Strategy Engine
