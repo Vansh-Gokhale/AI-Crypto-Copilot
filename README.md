@@ -279,3 +279,4 @@ Multi-factor risk assessment:
 **Concentration Risk (40% weight)**:
 - Calculates % of portfolio in single token
 - Penalizes heavy concentration
+- Formula: 1 - (1 / sqrt(number_of_tokens) * concentration_ratio)
