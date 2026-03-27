@@ -110,3 +110,4 @@ Aureum Elite provides:
    └─→ App handles: token approval → amount calculation → Aave supply
    └─→ Transaction signed & broadcasted
    └─→ Portfolio updates in real-time
+
