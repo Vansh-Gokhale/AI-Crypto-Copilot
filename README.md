@@ -176,3 +176,4 @@ v1/
 │       └── dummyData.ts          # Mock data for testing
 │
 ├── public/                        # Static assets
+├── package.json
