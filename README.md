@@ -304,3 +304,4 @@ risk_score = (
     liquidity_risk * 0.15 -
     (stablecoin_percentage * 0.10)
 ) * 100
+
