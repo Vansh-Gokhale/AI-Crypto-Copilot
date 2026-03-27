@@ -214,3 +214,4 @@ The application follows a hierarchical component structure:
 The app supports all ERC20 tokens and native ETH:
 - **Automatic Discovery**: Wallet connection triggers token detection
 - **Real-Time Updates**: Refreshes every 30 seconds
+- **Multicall Efficiency**: Batches contract calls to reduce RPC load
