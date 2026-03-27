@@ -290,3 +290,4 @@ Multi-factor risk assessment:
 - Considers market cap of holdings
 - Smaller cap = higher risk
 - Ensures ability to exit positions
+
