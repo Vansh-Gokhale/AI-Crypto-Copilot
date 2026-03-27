@@ -27,3 +27,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Project Architecture](#project-architecture)
 - [Key Features](#key-features)
 - [Advantages Over Existing Systems](#advantages-over-existing-systems)
+- [Smart Contracts](#smart-contracts)
