@@ -272,3 +272,4 @@ Streamlines DeFi interactions to single button:
 - Batches operations when possible
 - Provides gas cost estimates upfront
 
+### 4. Advanced Risk Scoring
