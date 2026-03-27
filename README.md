@@ -87,3 +87,4 @@ Aureum Elite provides:
 ### Step-by-Step User Journey
 
 ```
+1. CONNECT WALLET
