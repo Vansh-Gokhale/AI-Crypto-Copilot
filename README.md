@@ -698,3 +698,4 @@ This project is licensed under MIT License.
 ### Web3 Development
 - [Wagmi Docs](https://wagmi.sh)
 - [Viem Guide](https://viem.sh)
+- [RainbowKit Setup](https://rainbowkit.com)
