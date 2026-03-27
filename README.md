@@ -789,3 +789,4 @@ Our mission:
 
 ### Glossary
 
+- **DeFi**: Decentralized Finance - Financial services on blockchain
