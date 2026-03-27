@@ -158,3 +158,4 @@ v1/
 │   │   ├── AllocationChart.tsx   # Donut chart visualization
 │   │   ├── RiskGauge.tsx         # Risk score gauge
 │   │   ├── StrategyCard.tsx      # AI strategy recommendations
+│   │   ├── AICopilot.tsx         # Gemini AI integration
