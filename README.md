@@ -752,3 +752,4 @@ This project is licensed under MIT License.
 - ~1,000+ lines of configuration
 
 **Deployment**:
+- Next.js with Vercel optimization
