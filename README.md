@@ -15,3 +15,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 
 [Live Demo](#) · [GitHub](#) · [Documentation](#) · [Smart Contracts](#smart-contracts)
 
+</div>
