@@ -467,3 +467,4 @@ User Action
 - Used: Alchemy, Infura, or custom
 - Methods: eth_call, eth_blockNumber, multicall
 - Read-only for portfolio fetching
+- Write operations: User-initiated transactions
