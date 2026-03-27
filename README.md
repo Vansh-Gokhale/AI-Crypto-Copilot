@@ -112,3 +112,4 @@ Aureum Elite provides:
    └─→ Portfolio updates in real-time
 
 5. CONTINUOUS MONITORING
+   └─→ Real-time balance updates
