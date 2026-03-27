@@ -482,3 +482,4 @@ User Action
 - Wallet handles all crypto operations
 
 **Smart Contract Security**:
+- Only interact with audited contracts (Aave V3)
