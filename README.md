@@ -395,3 +395,4 @@ Cinematic design system:
 - Color-coded by token type
 
 **Risk Gauge**:
+- Speedometer style design
