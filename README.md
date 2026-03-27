@@ -459,3 +459,4 @@ User Action
 
 **2. Google Gemini 2.0 Flash API**
 - Requires API key
+- Rate limit: Based on plan (standard: 60 RPM)
