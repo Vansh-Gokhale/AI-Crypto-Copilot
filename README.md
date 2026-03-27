@@ -36,3 +36,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Contributing](#contributing)
 - [License](#license)
 
+---
