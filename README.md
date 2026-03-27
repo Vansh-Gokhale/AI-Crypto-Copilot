@@ -375,3 +375,4 @@ Ready for expansion to 11+ networks:
 - Arbitrum One (chainId: 42161)
 - Optimism (chainId: 10)
 - Base (chainId: 8453)
+- Avalanche (chainId: 43114)
