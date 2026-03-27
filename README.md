@@ -267,3 +267,4 @@ Streamlines DeFi interactions to single button:
 5. App executes supply transaction
 6. Portfolio updates in real-time
 
+**Gas Optimization**:
