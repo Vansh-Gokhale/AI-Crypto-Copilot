@@ -763,3 +763,4 @@ This project is licensed under MIT License.
 - 1000+ coins via CoinGecko API
 - All ERC20 standard tokens
 
+---
