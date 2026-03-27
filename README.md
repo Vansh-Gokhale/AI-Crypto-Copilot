@@ -521,3 +521,4 @@ User Action
 
 **Rendering Performance**:
 - Memoization of expensive components
+- Virtual scrolling for large token lists
