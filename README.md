@@ -292,3 +292,4 @@ Multi-factor risk assessment:
 - Ensures ability to exit positions
 
 **Diversification Bonus (10% weight)**:
+- Rewards stablecoin holdings
