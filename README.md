@@ -243,3 +243,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 **AI Prompt Structure**:
 ```
 Analyze this portfolio:
+- Total Value: $50,000 USD
