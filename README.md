@@ -146,3 +146,4 @@ Empowering DeFi through AI intelligence.
 v1/
 ├── src/
 │   ├── app/
+│   │   ├── page.tsx              # Main landing page
