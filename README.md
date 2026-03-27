@@ -309,3 +309,4 @@ Color Mapping:
 - 0-30: Green (Safe)
 - 30-60: Yellow (Moderate)
 - 60-100: Red (High)
+```
