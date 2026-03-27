@@ -532,3 +532,4 @@ User Action
 - Single request instead of multiple
 - Reduces RPC provider costs
 - Improves load time significantly
+
