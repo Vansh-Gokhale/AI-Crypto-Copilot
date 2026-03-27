@@ -256,3 +256,4 @@ Format: JSON with protocol, amount, apy, risk, reasoning
 ```
 
 ### 3. One-Click Protocol Execution
+
