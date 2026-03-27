@@ -21,3 +21,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 
 ## 📋 Table of Contents
 
+- [What is Aureum Elite?](#what-is-aureum-elite)
