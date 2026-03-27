@@ -347,3 +347,4 @@ WalletConnect v2 enables seamless mobile:
 1. Click "Connect Wallet"
 2. Tap "Mobile/QR" option
 3. Scan QR with mobile wallet app
+4. Confirm connection
