@@ -828,3 +828,4 @@ A: Polygon/Arbitrum/Optimism coming in Phase 2.
 
 **Ready to revolutionize your DeFi experience?**
 
+[Connect Wallet](#) · [View Demo](#) · [Join Discord](#)
