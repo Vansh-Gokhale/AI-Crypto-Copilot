@@ -303,3 +303,4 @@ risk_score = (
     volatility_risk * 0.35 +
     liquidity_risk * 0.15 -
     (stablecoin_percentage * 0.10)
+) * 100
