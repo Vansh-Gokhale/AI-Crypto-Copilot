@@ -97,3 +97,4 @@ Aureum Elite provides:
    └─→ App fetches all token balances from connected wallet
    └─→ Queries CoinGecko API for real-time prices
    └─→ Calculates USD value, allocation %, 24h change
+   └─→ Scores portfolio risk using weighted model
