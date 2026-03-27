@@ -248,3 +248,4 @@ Analyze this portfolio:
 - Risk Score: 35/100 (Safe)
 
 Recommend 3 strategies for yield farming:
+1. Best ROI opportunity
