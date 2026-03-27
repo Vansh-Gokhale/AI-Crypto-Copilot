@@ -641,3 +641,4 @@ User Action
 2. Create feature branch
 3. Make changes with tests
 4. Submit pull request
+5. Participate in code review
