@@ -534,3 +534,4 @@ User Action
 - Improves load time significantly
 
 **API Caching**:
+- 5-minute cache for prices
