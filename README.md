@@ -159,3 +159,4 @@ v1/
 │   │   ├── RiskGauge.tsx         # Risk score gauge
 │   │   ├── StrategyCard.tsx      # AI strategy recommendations
 │   │   ├── AICopilot.tsx         # Gemini AI integration
+│   │   └── Sidebar.tsx           # Navigation sidebar
