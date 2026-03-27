@@ -519,3 +519,4 @@ User Action
 - Stale-while-revalidate strategy
 - Background refetching
 
+**Rendering Performance**:
