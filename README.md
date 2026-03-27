@@ -265,3 +265,4 @@ Streamlines DeFi interactions to single button:
 3. If needed: Shows approval transaction
 4. User signs approval (if first time)
 5. App executes supply transaction
+6. Portfolio updates in real-time
