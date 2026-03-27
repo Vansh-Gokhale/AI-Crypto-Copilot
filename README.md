@@ -563,3 +563,4 @@ User Action
 
 ### Manual Testing
 - Sepolia testnet deployment
+- Multiple wallet testing
