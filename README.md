@@ -816,3 +816,4 @@ A: Yes! QR code login via WalletConnect.
 
 **Q: Is this audited?**
 A: We use audited protocols (Aave). Frontend code open for review.
+
