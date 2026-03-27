@@ -333,3 +333,4 @@ CoinGecko API provides market data:
 - Uses dummy prices if API unavailable
 - Alerts user to stale data
 
+### 6. Mobile-First QR Code Login
