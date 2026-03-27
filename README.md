@@ -487,3 +487,4 @@ User Action
 - Read-only calls don't cost gas
 - All write operations require user approval
 
+**API Security**:
