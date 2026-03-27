@@ -590,3 +590,4 @@ User Action
 - Strategy marketplace
 - Community voting on recommendations
 - Leader boards and achievements
+- Referral system
