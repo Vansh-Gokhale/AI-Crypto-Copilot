@@ -453,3 +453,4 @@ User Action
 
 **1. CoinGecko API (Free)**
 - No authentication required
+- Rate limit: 10-50 calls/minute (free tier)
