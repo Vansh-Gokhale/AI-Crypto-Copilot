@@ -52,3 +52,4 @@ Traditional DeFi dashboards are:
 - ❌ Limited to single chains
 - ❌ Generic and unintuitive
 
+### The Solution
