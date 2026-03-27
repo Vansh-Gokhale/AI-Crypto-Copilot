@@ -90,3 +90,4 @@ Aureum Elite provides:
 1. CONNECT WALLET
    └─→ Click "Connect Wallet"
    └─→ Choose wallet (MetaMask, Phantom, Core, Trust, etc.)
+   └─→ Scan QR code on mobile OR authorize on desktop
