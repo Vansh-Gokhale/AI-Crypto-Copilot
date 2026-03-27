@@ -421,3 +421,4 @@ Token Discovery & CoinGecko API
     ↓
 Portfolio Aggregation
     ├─→ calculatePortfolioValue()
+    ├─→ calculateAllocations()
