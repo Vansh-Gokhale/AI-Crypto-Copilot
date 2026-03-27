@@ -684,3 +684,4 @@ This project is licensed under MIT License.
 - Twitter: @aureumElite
 - Discord: Join community server
 - Email: support@aureum-elite.com
+- GitHub: github.com/Vansh-Gokhale/AI-Crypto-Copilot
