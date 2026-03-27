@@ -691,3 +691,4 @@ This project is licensed under MIT License.
 ## 🎓 Educational Resources
 
 ### DeFi Fundamentals
+- [Aave Documentation](https://docs.aave.com)
