@@ -60,3 +60,4 @@ Aureum Elite provides:
 - ✅ **One-Click Execution** - Supply to Aave, claim yields, swap tokens in one tap
 - ✅ **Risk Intelligence** - Real-time portfolio risk scoring
 - ✅ **Mobile-First Design** - QR code login for seamless mobile experience
+- ✅ **Multi-Chain Support** - Ethereum Mainnet, Sepolia, and more
