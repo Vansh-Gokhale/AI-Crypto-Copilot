@@ -335,3 +335,4 @@ CoinGecko API provides market data:
 
 ### 6. Mobile-First QR Code Login
 
+WalletConnect v2 enables seamless mobile:
