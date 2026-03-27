@@ -118,3 +118,4 @@ Aureum Elite provides:
    └─→ New strategy recommendations every refresh
 ```
 
+## 📞 Support
