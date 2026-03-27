@@ -361,3 +361,4 @@ WalletConnect v2 enables seamless mobile:
 - Ledger Live
 - Argent
 - All WalletConnect v2 compatible wallets (200+)
+
