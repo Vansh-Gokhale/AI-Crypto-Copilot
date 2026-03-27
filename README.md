@@ -550,3 +550,4 @@ User Action
 - Edge case handling
 
 ### Integration Tests
+- Wallet connection flows
