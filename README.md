@@ -67,3 +67,4 @@ Aureum Elite provides:
 
 ## 💎 Unique Selling Points (USPs)
 
+| Feature | Aureum Elite | Typical DeFi Dashboard | Advantage |
