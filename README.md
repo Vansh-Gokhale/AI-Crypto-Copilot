@@ -606,3 +606,4 @@ User Action
 **Revenue Streams**:
 1. Premium features (advanced analytics)
 2. API access for partners
+3. Transaction fees (0.1-0.5% optional)
