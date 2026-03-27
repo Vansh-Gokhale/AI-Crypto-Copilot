@@ -246,3 +246,4 @@ Analyze this portfolio:
 - Total Value: $50,000 USD
 - Tokens: [USDC, ETH, DAI]
 - Risk Score: 35/100 (Safe)
+
