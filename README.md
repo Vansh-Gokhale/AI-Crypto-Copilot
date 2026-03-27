@@ -244,3 +244,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 ```
 Analyze this portfolio:
 - Total Value: $50,000 USD
+- Tokens: [USDC, ETH, DAI]
