@@ -345,3 +345,4 @@ WalletConnect v2 enables seamless mobile:
 
 **Mobile Flow**:
 1. Click "Connect Wallet"
+2. Tap "Mobile/QR" option
