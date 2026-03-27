@@ -106,3 +106,4 @@ Aureum Elite provides:
    └─→ Strategies include: protocol, amount, expected yield, risk level
 
 4. ONE-CLICK EXECUTION
+   └─→ User selects top strategy
