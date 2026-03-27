@@ -436,3 +436,4 @@ UI Rendering
     ├─→ AllocationChart
     ├─→ RiskGauge
     └─→ StrategyCards
+    ↓
