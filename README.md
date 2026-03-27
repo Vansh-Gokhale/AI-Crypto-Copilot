@@ -315,3 +315,4 @@ Color Mapping:
 
 CoinGecko API provides market data:
 
+**Data Points**:
