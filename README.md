@@ -479,3 +479,4 @@ User Action
 - App never controls private keys
 - No seed phrase exposure
 - User signs all transactions
+- Wallet handles all crypto operations
