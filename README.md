@@ -612,3 +612,4 @@ User Action
 
 **No Fees Currently**:
 - All features free for MVP
+- Only pay blockchain gas costs
