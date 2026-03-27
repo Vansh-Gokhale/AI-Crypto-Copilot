@@ -352,3 +352,4 @@ WalletConnect v2 enables seamless mobile:
 6. Return to web app, auto-connected
 
 **Wallets Supported**:
+- MetaMask
