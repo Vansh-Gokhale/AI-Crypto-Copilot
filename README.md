@@ -787,3 +787,4 @@ Our mission:
 
 ## 📚 Appendix
 
+### Glossary
