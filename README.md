@@ -688,3 +688,4 @@ This project is licensed under MIT License.
 
 ---
 
+## 🎓 Educational Resources
