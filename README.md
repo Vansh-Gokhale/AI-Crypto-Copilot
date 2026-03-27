@@ -167,3 +167,4 @@ v1/
 │   │   └── useAaveDeposit.ts     # Handle Aave supply transactions
 │   │
 │   ├── config/
+│   │   ├── contracts.ts          # Token addresses + ABIs
