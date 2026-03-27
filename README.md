@@ -331,3 +331,4 @@ CoinGecko API provides market data:
 **Fallback System**:
 - Caches last known prices locally
 - Uses dummy prices if API unavailable
+- Alerts user to stale data
