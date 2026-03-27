@@ -348,3 +348,4 @@ WalletConnect v2 enables seamless mobile:
 2. Tap "Mobile/QR" option
 3. Scan QR with mobile wallet app
 4. Confirm connection
+5. Wallet opens app (deep link)
