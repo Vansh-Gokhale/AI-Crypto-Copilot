@@ -523,3 +523,4 @@ User Action
 - Memoization of expensive components
 - Virtual scrolling for large token lists
 - Canvas-based charts (not SVG)
+- Tailwind CSS optimization
