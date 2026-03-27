@@ -574,3 +574,4 @@ User Action
 ### Phase 2: Enhanced Features
 - Multi-chain portfolio aggregation
 - Advanced charting and analytics
+- Portfolio rebalancing automation
