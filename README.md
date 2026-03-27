@@ -289,3 +289,4 @@ Multi-factor risk assessment:
 **Liquidity Risk (15% weight)**:
 - Considers market cap of holdings
 - Smaller cap = higher risk
+- Ensures ability to exit positions
