@@ -463,3 +463,4 @@ User Action
 - Used for: Strategy generation, analysis
 - Fallback: Dummy strategies
 
+**3. Blockchain RPC**
