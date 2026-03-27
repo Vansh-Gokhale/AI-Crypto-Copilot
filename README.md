@@ -737,3 +737,4 @@ This project is licensed under MIT License.
 
 **To Our Supporters**:
 - Early testers on Sepolia
+- Community feedback providers
