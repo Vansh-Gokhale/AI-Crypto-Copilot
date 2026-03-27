@@ -55,3 +55,4 @@ Traditional DeFi dashboards are:
 ### The Solution
 
 Aureum Elite provides:
+- ✅ **Unified Portfolio View** - See all your crypto across chains instantly
