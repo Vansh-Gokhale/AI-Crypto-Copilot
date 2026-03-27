@@ -366,3 +366,4 @@ WalletConnect v2 enables seamless mobile:
 
 Ready for expansion to 11+ networks:
 
+**Currently Supported**:
