@@ -57,3 +57,4 @@ Traditional DeFi dashboards are:
 Aureum Elite provides:
 - ✅ **Unified Portfolio View** - See all your crypto across chains instantly
 - ✅ **AI Strategy Engine** - Get personalized DeFi recommendations from Gemini AI
+- ✅ **One-Click Execution** - Supply to Aave, claim yields, swap tokens in one tap
