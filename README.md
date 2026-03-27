@@ -410,3 +410,4 @@ Cinematic design system:
 
 ## 📊 Advanced System Architecture
 
+### Data Flow
