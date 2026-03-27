@@ -280,3 +280,4 @@ Multi-factor risk assessment:
 - Calculates % of portfolio in single token
 - Penalizes heavy concentration
 - Formula: 1 - (1 / sqrt(number_of_tokens) * concentration_ratio)
+
