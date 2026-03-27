@@ -25,3 +25,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Unique Selling Points (USPs)](#unique-selling-points-usps)
 - [How It Works](#how-it-works)
 - [Project Architecture](#project-architecture)
+- [Key Features](#key-features)
