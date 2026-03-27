@@ -776,3 +776,4 @@ Our mission:
 4. Build community-driven DeFi infrastructure
 5. Advance Web3 mainstream adoption
 
+**Core Values**:
