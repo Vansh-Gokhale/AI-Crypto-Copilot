@@ -232,3 +232,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Market conditions and trends
 - User risk tolerance
 
+**Output Strategies**:
