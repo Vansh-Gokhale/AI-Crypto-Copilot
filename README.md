@@ -40,3 +40,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 
 ## 🎯 What is Aureum Elite?
 
+**Aureum Elite** is a luxury-grade DeFi portfolio analyzer that bridges the gap between raw blockchain data and actionable financial intelligence. It's designed for both crypto-native users and institutional investors who want AI-powered insights without the complexity.
