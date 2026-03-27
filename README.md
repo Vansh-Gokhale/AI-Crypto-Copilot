@@ -437,3 +437,4 @@ UI Rendering
     ├─→ RiskGauge
     └─→ StrategyCards
     ↓
+User Action
