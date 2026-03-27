@@ -14,3 +14,4 @@
 Real-time analytics · AI strategy generation · One-click protocol execution · Multi-chain support
 
 [Live Demo](#) · [GitHub](#) · [Documentation](#) · [Smart Contracts](#smart-contracts)
+
