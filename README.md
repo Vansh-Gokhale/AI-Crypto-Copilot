@@ -798,3 +798,4 @@ Our mission:
 ### Acronyms
 
 - **EVM**: Ethereum Virtual Machine
+- **RPM**: Requests Per Minute
