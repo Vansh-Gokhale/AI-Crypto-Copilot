@@ -628,3 +628,4 @@ User Action
 - Architecture documentation
 - API reference guide
 
+**Community Channels**:
