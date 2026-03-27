@@ -111,3 +111,4 @@ Aureum Elite provides:
    └─→ Transaction signed & broadcasted
    └─→ Portfolio updates in real-time
 
+5. CONTINUOUS MONITORING
