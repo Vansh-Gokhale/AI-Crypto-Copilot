@@ -71,3 +71,4 @@ Aureum Elite provides:
 |---------|-------------|----------------------|-----------|
 | **AI Strategy Engine** | ✅ Gemini 2.0 Flash | ❌ Manual research | Automated, personalized recommendations |
 | **One-Click Aave Deposit** | ✅ Full approval + supply flow | ❌ Navigate to app.aave.com | Save 3-5 clicks, reduce errors |
+| **Risk Scoring** | ✅ Weighted portfolio model | ❌ None | Data-driven risk assessment |
