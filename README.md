@@ -704,3 +704,4 @@ This project is licensed under MIT License.
 - [Google Gemini API](https://ai.google.dev)
 - [Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering)
 - [LLM Best Practices](https://docs.anthropic.com)
+
