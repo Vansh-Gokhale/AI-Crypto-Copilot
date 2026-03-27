@@ -662,3 +662,4 @@ This project is licensed under MIT License.
 - Aave Protocol (DeFi composability)
 - Wagmi & Viem (Web3 integration)
 - RainbowKit (Wallet UI)
+- CoinGecko (Market data)
