@@ -605,3 +605,4 @@ User Action
 
 **Revenue Streams**:
 1. Premium features (advanced analytics)
+2. API access for partners
