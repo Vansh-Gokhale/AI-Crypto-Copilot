@@ -615,3 +615,4 @@ User Action
 - Only pay blockchain gas costs
 - Community feedback drives priorities
 - Revenue deferred to enable growth
+
