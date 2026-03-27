@@ -797,3 +797,4 @@ Our mission:
 
 ### Acronyms
 
+- **EVM**: Ethereum Virtual Machine
