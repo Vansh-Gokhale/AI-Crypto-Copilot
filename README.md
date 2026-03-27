@@ -53,3 +53,4 @@ Traditional DeFi dashboards are:
 - ❌ Generic and unintuitive
 
 ### The Solution
+
