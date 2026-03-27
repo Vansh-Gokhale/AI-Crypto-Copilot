@@ -114,3 +114,4 @@ Aureum Elite provides:
 5. CONTINUOUS MONITORING
    └─→ Real-time balance updates
    └─→ 24h performance tracking
+   └─→ Yield accrual visualization
