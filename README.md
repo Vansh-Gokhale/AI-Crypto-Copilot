@@ -201,3 +201,4 @@ The application follows a hierarchical component structure:
 - PortfolioSummary: Displays total value and daily changes
 - AssetTable: Shows individual token holdings
 - AllocationChart: Visualizes portfolio allocation
+- RiskGauge: Displays risk scoring
