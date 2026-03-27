@@ -673,3 +673,4 @@ This project is licensed under MIT License.
 - Do your own research (DYOR)
 - Use at own risk
 - Test on testnet first
+- Report security issues responsibly
