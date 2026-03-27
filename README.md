@@ -715,3 +715,4 @@ This project is licensed under MIT License.
 - AI strategy generation
 - Aave integration
 
+**Community Alpha**: 🎯 In Progress
