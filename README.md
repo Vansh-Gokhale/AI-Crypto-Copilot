@@ -122,3 +122,4 @@ Aureum Elite provides:
 
 - **Documentation**: [Docs site](#)
 - **Discord**: [Join community](#)
+- **Twitter**: [@aureumElite](#)
