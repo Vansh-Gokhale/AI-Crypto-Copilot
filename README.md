@@ -597,3 +597,4 @@ User Action
 - Multi-signature support
 - Compliance reporting
 - Tax reporting integration
+- White-label deployment
