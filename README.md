@@ -24,3 +24,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [What is Aureum Elite?](#what-is-aureum-elite)
 - [Unique Selling Points (USPs)](#unique-selling-points-usps)
 - [How It Works](#how-it-works)
+- [Project Architecture](#project-architecture)
