@@ -418,3 +418,4 @@ User Wallet
 Wagmi Hooks (useAccount, useBalance)
     ↓
 Token Discovery & CoinGecko API
+    ↓
