@@ -501,3 +501,4 @@ User Action
 - User confirms all details
 - Nonce handling by wallet
 - Clear transaction previews
+
