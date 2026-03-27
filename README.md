@@ -716,3 +716,4 @@ This project is licensed under MIT License.
 - Aave integration
 
 **Community Alpha**: 🎯 In Progress
+- User feedback collection
