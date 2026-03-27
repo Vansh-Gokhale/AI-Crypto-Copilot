@@ -717,3 +717,4 @@ This project is licensed under MIT License.
 
 **Community Alpha**: 🎯 In Progress
 - User feedback collection
+- Bug bounty program
