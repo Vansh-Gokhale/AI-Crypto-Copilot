@@ -148,3 +148,4 @@ v1/
 │   ├── app/
 │   │   ├── page.tsx              # Main landing page
 │   │   ├── layout.tsx            # Root layout with metadata
+│   │   ├── providers.tsx         # Wagmi + RainbowKit providers
