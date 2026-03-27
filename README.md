@@ -555,3 +555,4 @@ User Action
 - API integration testing
 - Data aggregation accuracy
 
+### E2E Tests (Planned)
