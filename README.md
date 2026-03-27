@@ -94,3 +94,4 @@ Aureum Elite provides:
    └─→ Grant signature (no transaction costs)
 
 2. PORTFOLIO ANALYSIS
+   └─→ App fetches all token balances from connected wallet
