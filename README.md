@@ -101,3 +101,4 @@ Aureum Elite provides:
 
 3. AI STRATEGY GENERATION
    └─→ Portfolio data → Sent to Gemini 2.0 Flash
+   └─→ AI analyzes risk, yield opportunities, market conditions
