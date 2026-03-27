@@ -121,3 +121,4 @@ Aureum Elite provides:
 ## 📞 Support
 
 - **Documentation**: [Docs site](#)
+- **Discord**: [Join community](#)
