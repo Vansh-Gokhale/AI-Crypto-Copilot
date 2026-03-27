@@ -204,3 +204,4 @@ The application follows a hierarchical component structure:
 - RiskGauge: Displays risk scoring
 - AICopilot: AI interaction panel
 - StrategyCard: Individual strategy recommendations
+
