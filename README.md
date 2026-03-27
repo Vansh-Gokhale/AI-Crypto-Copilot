@@ -423,3 +423,4 @@ Portfolio Aggregation
     ├─→ calculatePortfolioValue()
     ├─→ calculateAllocations()
     └─→ scorePortfolioRisk()
+    ↓
