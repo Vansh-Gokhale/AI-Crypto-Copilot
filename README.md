@@ -350,3 +350,4 @@ WalletConnect v2 enables seamless mobile:
 4. Confirm connection
 5. Wallet opens app (deep link)
 6. Return to web app, auto-connected
+
