@@ -812,3 +812,4 @@ A: No. Data never leaves your browser. We use read-only calls.
 A: Currently free. Only pay blockchain gas costs.
 
 **Q: Can I use on mobile?**
+A: Yes! QR code login via WalletConnect.
