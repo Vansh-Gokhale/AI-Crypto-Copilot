@@ -358,3 +358,4 @@ WalletConnect v2 enables seamless mobile:
 - Trust Wallet
 - Rainbow
 - Coinbase Wallet
+- Ledger Live
