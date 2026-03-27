@@ -147,3 +147,4 @@ v1/
 ├── src/
 │   ├── app/
 │   │   ├── page.tsx              # Main landing page
+│   │   ├── layout.tsx            # Root layout with metadata
