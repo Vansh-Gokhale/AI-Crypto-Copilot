@@ -430,3 +430,4 @@ Gemini AI Analysis
     ↓
 Strategy Generation
     ↓
+UI Rendering
