@@ -202,3 +202,4 @@ The application follows a hierarchical component structure:
 - AssetTable: Shows individual token holdings
 - AllocationChart: Visualizes portfolio allocation
 - RiskGauge: Displays risk scoring
+- AICopilot: AI interaction panel
