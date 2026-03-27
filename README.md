@@ -626,3 +626,4 @@ User Action
 - In-code comments and JSDoc
 - README.md with full guide
 - Architecture documentation
+- API reference guide
