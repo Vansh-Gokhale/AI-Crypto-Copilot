@@ -140,3 +140,4 @@ Empowering DeFi through AI intelligence.
 
 ## 🏗️ Project Architecture
 
+### Directory Structure
