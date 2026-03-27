@@ -654,3 +654,4 @@ User Action
 
 ## 📄 License & Legal
 
+This project is licensed under MIT License.
