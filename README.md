@@ -561,3 +561,4 @@ User Action
 - Strategy generation validation
 - Transaction execution flow
 
+### Manual Testing
