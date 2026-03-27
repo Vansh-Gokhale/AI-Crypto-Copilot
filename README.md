@@ -123,3 +123,4 @@ Aureum Elite provides:
 - **Documentation**: [Docs site](#)
 - **Discord**: [Join community](#)
 - **Twitter**: [@aureumElite](#)
+- **Email**: support@aureum-elite.com
