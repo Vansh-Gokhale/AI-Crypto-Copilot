@@ -502,3 +502,4 @@ User Action
 - Nonce handling by wallet
 - Clear transaction previews
 
+---
