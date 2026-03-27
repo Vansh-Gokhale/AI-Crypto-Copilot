@@ -252,3 +252,4 @@ Recommend 3 strategies for yield farming:
 2. Balanced approach
 3. Conservative option
 
+Format: JSON with protocol, amount, apy, risk, reasoning
