@@ -514,3 +514,4 @@ User Action
 - Lazy loading of charts and tables
 
 **Data Fetching**:
+- React Query for caching and deduplication
