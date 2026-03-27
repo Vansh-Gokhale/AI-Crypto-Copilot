@@ -226,3 +226,4 @@ Token detection uses multiple strategies:
 
 Integrates Google Gemini 2.0 Flash for intelligent analysis:
 
+**Input Data**:
