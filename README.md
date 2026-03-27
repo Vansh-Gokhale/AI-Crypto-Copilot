@@ -781,3 +781,4 @@ Our mission:
 - User security as top priority
 - Community-first development
 - Continuous innovation
+- Ethical AI usage
