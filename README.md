@@ -196,3 +196,4 @@ The application follows a hierarchical component structure:
 - Header: Displays user info, wallet connection button
 - Sidebar: Navigation menu and settings
 - Main Content Area: All portfolio and strategy views
+
