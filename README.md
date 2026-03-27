@@ -834,3 +834,4 @@ A: Polygon/Arbitrum/Optimism coming in Phase 2.
 
 © 2024-2026 Aureum Elite. All rights reserved.
 
+</div>
