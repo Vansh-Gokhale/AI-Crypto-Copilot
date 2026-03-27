@@ -830,3 +830,4 @@ A: Polygon/Arbitrum/Optimism coming in Phase 2.
 
 [Connect Wallet](#) · [View Demo](#) · [Join Discord](#)
 
+**Aureum Elite - Empowering DeFi through AI**
