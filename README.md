@@ -355,3 +355,4 @@ WalletConnect v2 enables seamless mobile:
 - MetaMask
 - Phantom (Solana/EVM)
 - Core (formerly Avalanche wallet)
+- Trust Wallet
