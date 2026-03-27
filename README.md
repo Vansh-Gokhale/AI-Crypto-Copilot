@@ -282,3 +282,4 @@ Multi-factor risk assessment:
 - Formula: 1 - (1 / sqrt(number_of_tokens) * concentration_ratio)
 
 **Volatility Risk (35% weight)**:
+- Uses 30-day historical volatility from CoinGecko
