@@ -665,3 +665,4 @@ This project is licensed under MIT License.
 - CoinGecko (Market data)
 - Google Gemini (AI intelligence)
 - Next.js (React framework)
+- Tailwind CSS (Styling)
