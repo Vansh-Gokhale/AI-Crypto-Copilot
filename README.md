@@ -45,3 +45,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 ### The Problem It Solves
 
 Traditional DeFi dashboards are:
+- ❌ Fragmented across multiple apps
