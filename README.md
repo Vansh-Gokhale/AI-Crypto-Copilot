@@ -806,3 +806,4 @@ Our mission:
 ### Common Questions (FAQ)
 
 **Q: Is my wallet data stored?**
+A: No. Data never leaves your browser. We use read-only calls.
