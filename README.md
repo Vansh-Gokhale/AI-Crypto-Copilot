@@ -241,3 +241,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Reasoning explanation
 
 **AI Prompt Structure**:
+```
