@@ -629,3 +629,4 @@ User Action
 - API reference guide
 
 **Community Channels**:
+- Discord for discussions
