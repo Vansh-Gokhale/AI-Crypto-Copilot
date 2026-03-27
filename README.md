@@ -117,3 +117,4 @@ Aureum Elite provides:
    └─→ Yield accrual visualization
    └─→ New strategy recommendations every refresh
 ```
+
