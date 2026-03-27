@@ -480,3 +480,4 @@ User Action
 - No seed phrase exposure
 - User signs all transactions
 - Wallet handles all crypto operations
+
