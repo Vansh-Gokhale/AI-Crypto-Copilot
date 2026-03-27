@@ -211,3 +211,4 @@ The application follows a hierarchical component structure:
 
 ### 1. Universal Portfolio Visibility
 
+The app supports all ERC20 tokens and native ETH:
