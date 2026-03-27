@@ -528,3 +528,4 @@ User Action
 ### Network Performance
 
 **RPC Optimization**:
+- Multicall contracts for batching
