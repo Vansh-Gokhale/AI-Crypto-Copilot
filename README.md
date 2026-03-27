@@ -632,3 +632,4 @@ User Action
 - Discord for discussions
 - GitHub issues for bugs
 - Twitter for announcements
+- Email support available
