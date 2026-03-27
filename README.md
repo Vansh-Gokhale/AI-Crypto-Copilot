@@ -582,3 +582,4 @@ User Action
 - Personalized strategy recommendations
 - Market prediction models
 - Risk adjusted portfolio optimization
+- Sentiment analysis integration
