@@ -218,3 +218,4 @@ The app supports all ERC20 tokens and native ETH:
 - **Fallback Handling**: Shows cached data while fetching
 
 Token detection uses multiple strategies:
+1. Known token list (30+ verified tokens)
