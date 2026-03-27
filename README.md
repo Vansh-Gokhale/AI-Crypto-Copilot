@@ -791,3 +791,4 @@ Our mission:
 
 - **DeFi**: Decentralized Finance - Financial services on blockchain
 - **APY**: Annual Percentage Yield - Yearly return on investment
+- **TVL**: Total Value Locked - Total assets in protocol
