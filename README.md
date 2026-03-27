@@ -294,3 +294,4 @@ Multi-factor risk assessment:
 **Diversification Bonus (10% weight)**:
 - Rewards stablecoin holdings
 - Encourages healthy portfolio mix
+- Reduces overall portfolio volatility
