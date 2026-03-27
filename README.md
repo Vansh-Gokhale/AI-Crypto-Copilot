@@ -808,3 +808,4 @@ Our mission:
 **Q: Is my wallet data stored?**
 A: No. Data never leaves your browser. We use read-only calls.
 
+**Q: How are fees structured?**
