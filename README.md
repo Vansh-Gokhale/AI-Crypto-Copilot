@@ -383,3 +383,4 @@ Ready for expansion to 11+ networks:
 - Wallet prompts user if needed
 - Portfolio updates per chain
 - Cross-chain aggregation
+
