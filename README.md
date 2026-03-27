@@ -95,3 +95,4 @@ Aureum Elite provides:
 
 2. PORTFOLIO ANALYSIS
    └─→ App fetches all token balances from connected wallet
+   └─→ Queries CoinGecko API for real-time prices
