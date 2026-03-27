@@ -556,3 +556,4 @@ User Action
 - Data aggregation accuracy
 
 ### E2E Tests (Planned)
+- Complete user journeys
