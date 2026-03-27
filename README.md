@@ -489,3 +489,4 @@ User Action
 
 **API Security**:
 - CoinGecko: HTTPS only, no secrets
+- Gemini: API key stored securely (server-side in future)
