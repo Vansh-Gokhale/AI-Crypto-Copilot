@@ -498,3 +498,4 @@ User Action
 **Best Practices Implemented**:
 - Transaction simulation before sending
 - Gas estimation with safety margin
+- User confirms all details
