@@ -493,3 +493,4 @@ User Action
 - RPC: Encrypted HTTPS connections
 - No sensitive data in URLs or logs
 
+### Transaction Safety
