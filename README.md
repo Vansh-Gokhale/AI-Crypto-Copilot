@@ -500,3 +500,4 @@ User Action
 - Gas estimation with safety margin
 - User confirms all details
 - Nonce handling by wallet
+- Clear transaction previews
