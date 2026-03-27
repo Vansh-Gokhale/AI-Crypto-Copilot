@@ -149,3 +149,4 @@ v1/
 │   │   ├── page.tsx              # Main landing page
 │   │   ├── layout.tsx            # Root layout with metadata
 │   │   ├── providers.tsx         # Wagmi + RainbowKit providers
+│   │   └── globals.css           # Global styles (Tailwind)
