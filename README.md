@@ -59,3 +59,4 @@ Aureum Elite provides:
 - ✅ **AI Strategy Engine** - Get personalized DeFi recommendations from Gemini AI
 - ✅ **One-Click Execution** - Supply to Aave, claim yields, swap tokens in one tap
 - ✅ **Risk Intelligence** - Real-time portfolio risk scoring
+- ✅ **Mobile-First Design** - QR code login for seamless mobile experience
