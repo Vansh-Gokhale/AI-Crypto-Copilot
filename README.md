@@ -219,3 +219,4 @@ The app supports all ERC20 tokens and native ETH:
 
 Token detection uses multiple strategies:
 1. Known token list (30+ verified tokens)
+2. Wallet event scanning (future)
