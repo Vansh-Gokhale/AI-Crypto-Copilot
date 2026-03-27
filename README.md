@@ -427,3 +427,4 @@ Portfolio Aggregation
 Risk Scoring Engine (src/utils/riskScorer.ts)
     ↓
 Gemini AI Analysis
+    ↓
