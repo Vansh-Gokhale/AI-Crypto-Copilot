@@ -185,3 +185,4 @@ v1/
 
 ### Component Architecture Detailed
 
+The application follows a hierarchical component structure:
