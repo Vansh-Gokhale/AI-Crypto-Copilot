@@ -371,3 +371,4 @@ Ready for expansion to 11+ networks:
 - Sepolia Testnet (chainId: 11155111)
 
 **Easy to Add**:
+- Polygon (chainId: 137)
