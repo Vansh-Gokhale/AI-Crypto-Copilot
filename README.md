@@ -151,3 +151,4 @@ v1/
 │   │   ├── providers.tsx         # Wagmi + RainbowKit providers
 │   │   └── globals.css           # Global styles (Tailwind)
 │   │
+│   ├── components/
