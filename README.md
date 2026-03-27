@@ -133,3 +133,4 @@ Aureum Elite provides:
 
 Empowering DeFi through AI intelligence.
 
+</div>
