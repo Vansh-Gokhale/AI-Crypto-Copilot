@@ -434,3 +434,4 @@ UI Rendering
     ├─→ PortfolioSummary
     ├─→ AssetTable
     ├─→ AllocationChart
+    ├─→ RiskGauge
