@@ -435,3 +435,4 @@ UI Rendering
     ├─→ AssetTable
     ├─→ AllocationChart
     ├─→ RiskGauge
+    └─→ StrategyCards
