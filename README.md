@@ -562,3 +562,4 @@ User Action
 - Transaction execution flow
 
 ### Manual Testing
+- Sepolia testnet deployment
