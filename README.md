@@ -790,3 +790,4 @@ Our mission:
 ### Glossary
 
 - **DeFi**: Decentralized Finance - Financial services on blockchain
+- **APY**: Annual Percentage Yield - Yearly return on investment
