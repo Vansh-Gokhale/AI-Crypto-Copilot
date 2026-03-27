@@ -233,3 +233,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - User risk tolerance
 
 **Output Strategies**:
+- Protocol recommendation (e.g., Aave V3, Compound)
