@@ -169,3 +169,4 @@ v1/
 │   ├── config/
 │   │   ├── contracts.ts          # Token addresses + ABIs
 │   │   └── wagmi.ts              # Wagmi config + chain setup
+│   │
