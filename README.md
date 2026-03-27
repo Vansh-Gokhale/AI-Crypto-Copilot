@@ -721,3 +721,4 @@ This project is licensed under MIT License.
 - Feature voting
 
 **Testnet Expansion**: 🔮 Planned
+- 11+ network support
