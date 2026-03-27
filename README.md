@@ -254,3 +254,4 @@ Recommend 3 strategies for yield farming:
 
 Format: JSON with protocol, amount, apy, risk, reasoning
 ```
+
