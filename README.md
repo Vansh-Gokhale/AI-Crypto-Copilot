@@ -458,3 +458,4 @@ User Action
 - Fallback: Cached prices + dummy prices
 
 **2. Google Gemini 2.0 Flash API**
+- Requires API key
