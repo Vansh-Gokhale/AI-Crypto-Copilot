@@ -801,3 +801,4 @@ Our mission:
 - **RPM**: Requests Per Minute
 - **UI/UX**: User Interface / User Experience
 - **MVP**: Minimum Viable Product
+- **DYOR**: Do Your Own Research
