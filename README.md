@@ -559,3 +559,4 @@ User Action
 - Complete user journeys
 - Portfolio display verification
 - Strategy generation validation
+- Transaction execution flow
