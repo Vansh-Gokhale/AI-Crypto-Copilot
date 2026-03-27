@@ -9,3 +9,4 @@
 ![Aave V3](https://img.shields.io/badge/Aave%20V3-Sepolia-9cf)
 ![RainbowKit](https://img.shields.io/badge/RainbowKit-v2-ff6b6b)
 
+**Institutional-grade DeFi portfolio intelligence powered by AI**
