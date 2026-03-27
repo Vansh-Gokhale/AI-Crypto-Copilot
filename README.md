@@ -457,3 +457,4 @@ User Action
 - Used for: Prices, market data, historical data
 - Fallback: Cached prices + dummy prices
 
+**2. Google Gemini 2.0 Flash API**
