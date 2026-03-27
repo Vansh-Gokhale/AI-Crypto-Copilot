@@ -328,3 +328,4 @@ CoinGecko API provides market data:
 - Manual refresh via button
 - Background sync when tab inactive
 
+**Fallback System**:
