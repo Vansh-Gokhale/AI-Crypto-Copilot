@@ -269,3 +269,4 @@ Streamlines DeFi interactions to single button:
 
 **Gas Optimization**:
 - Uses EIP-1559 for priority gas estimation
+- Batches operations when possible
