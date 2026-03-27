@@ -768,3 +768,4 @@ This project is licensed under MIT License.
 ## 🔮 Vision Statement
 
 **Aureum Elite aims to be the world's most intuitive AI-powered DeFi portfolio manager.**
+
