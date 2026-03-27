@@ -30,3 +30,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Smart Contracts](#smart-contracts)
 - [Installation & Setup](#installation--setup)
 - [Usage Guide](#usage-guide)
+- [Technology Stack](#technology-stack)
