@@ -193,3 +193,4 @@ The application follows a hierarchical component structure:
 - Provides context to all child components
 
 **Second Level - Page Components:**
+- Header: Displays user info, wallet connection button
