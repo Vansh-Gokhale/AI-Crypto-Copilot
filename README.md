@@ -576,3 +576,4 @@ User Action
 - Advanced charting and analytics
 - Portfolio rebalancing automation
 - Limit orders and DCA
+- Portfolio snapshots and history
