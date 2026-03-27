@@ -794,3 +794,4 @@ Our mission:
 - **TVL**: Total Value Locked - Total assets in protocol
 - **ERC20**: Ethereum token standard for interoperability
 - **Aave**: Leading lending protocol and DeFi composability hub
+
