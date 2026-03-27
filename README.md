@@ -306,3 +306,4 @@ risk_score = (
 ) * 100
 
 Color Mapping:
+- 0-30: Green (Safe)
