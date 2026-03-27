@@ -74,3 +74,4 @@ Aureum Elite provides:
 | **Risk Scoring** | ✅ Weighted portfolio model | ❌ None | Data-driven risk assessment |
 | **Luxury UI/UX** | ✅ Gold & black design system | ❌ Generic dashboards | Premium user experience |
 | **Multi-Chain Auto-Detection** | ✅ Mainnet + Sepolia + future chains | ❌ Single chain | Seamless chain switching |
+| **QR Mobile Login** | ✅ MetaMask/Phantom/Core/Trust | ❌ Desktop only | Mobile-native web3 experience |
