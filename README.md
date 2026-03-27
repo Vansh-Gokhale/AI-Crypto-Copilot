@@ -100,3 +100,4 @@ Aureum Elite provides:
    └─→ Scores portfolio risk using weighted model
 
 3. AI STRATEGY GENERATION
+   └─→ Portfolio data → Sent to Gemini 2.0 Flash
