@@ -696,3 +696,4 @@ This project is licensed under MIT License.
 - [DeFi Pulse Rankings](https://defipulse.com)
 
 ### Web3 Development
+- [Wagmi Docs](https://wagmi.sh)
