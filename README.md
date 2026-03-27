@@ -98,3 +98,4 @@ Aureum Elite provides:
    └─→ Queries CoinGecko API for real-time prices
    └─→ Calculates USD value, allocation %, 24h change
    └─→ Scores portfolio risk using weighted model
+
