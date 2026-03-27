@@ -587,3 +587,4 @@ User Action
 
 ### Phase 4: Community & Social
 - Portfolio sharing (anonymized)
+- Strategy marketplace
