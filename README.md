@@ -160,3 +160,4 @@ v1/
 │   │   ├── StrategyCard.tsx      # AI strategy recommendations
 │   │   ├── AICopilot.tsx         # Gemini AI integration
 │   │   └── Sidebar.tsx           # Navigation sidebar
+│   │
