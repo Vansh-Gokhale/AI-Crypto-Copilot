@@ -334,3 +334,4 @@ CoinGecko API provides market data:
 - Alerts user to stale data
 
 ### 6. Mobile-First QR Code Login
+
