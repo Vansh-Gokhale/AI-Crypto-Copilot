@@ -572,3 +572,4 @@ User Action
 ## 📈 Future Roadmap
 
 ### Phase 2: Enhanced Features
+- Multi-chain portfolio aggregation
