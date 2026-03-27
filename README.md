@@ -400,3 +400,4 @@ Cinematic design system:
 - Color transitions
 - Real-time updates
 
+**Asset Table**:
