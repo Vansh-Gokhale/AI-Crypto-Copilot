@@ -799,3 +799,4 @@ Our mission:
 
 - **EVM**: Ethereum Virtual Machine
 - **RPM**: Requests Per Minute
+- **UI/UX**: User Interface / User Experience
