@@ -171,3 +171,4 @@ v1/
 │   │   └── wagmi.ts              # Wagmi config + chain setup
 │   │
 │   └── utils/
+│       ├── riskScorer.ts         # Risk calculation engine
