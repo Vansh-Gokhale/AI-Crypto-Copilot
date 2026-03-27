@@ -759,3 +759,4 @@ This project is licensed under MIT License.
 
 **Supported Assets**:
 - 30+ tokens on Ethereum
+- 50+ tokens across all networks
