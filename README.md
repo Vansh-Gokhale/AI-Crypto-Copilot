@@ -795,3 +795,4 @@ Our mission:
 - **ERC20**: Ethereum token standard for interoperability
 - **Aave**: Leading lending protocol and DeFi composability hub
 
+### Acronyms
