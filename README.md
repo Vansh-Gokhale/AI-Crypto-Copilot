@@ -466,3 +466,4 @@ User Action
 **3. Blockchain RPC**
 - Used: Alchemy, Infura, or custom
 - Methods: eth_call, eth_blockNumber, multicall
+- Read-only for portfolio fetching
