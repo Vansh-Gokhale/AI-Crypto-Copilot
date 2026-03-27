@@ -183,3 +183,4 @@ v1/
 └── README.md
 ```
 
+### Component Architecture Detailed
