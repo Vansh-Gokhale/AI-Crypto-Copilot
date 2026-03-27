@@ -819,3 +819,4 @@ A: We use audited protocols (Aave). Frontend code open for review.
 
 **Q: When will other chains be supported?**
 A: Polygon/Arbitrum/Optimism coming in Phase 2.
+
