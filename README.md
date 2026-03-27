@@ -378,3 +378,4 @@ Ready for expansion to 11+ networks:
 - Avalanche (chainId: 43114)
 - And many more...
 
+**Chain Switching**:
