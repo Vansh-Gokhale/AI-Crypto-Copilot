@@ -461,3 +461,4 @@ User Action
 - Requires API key
 - Rate limit: Based on plan (standard: 60 RPM)
 - Used for: Strategy generation, analysis
+- Fallback: Dummy strategies
