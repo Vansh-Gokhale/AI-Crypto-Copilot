@@ -285,3 +285,4 @@ Multi-factor risk assessment:
 - Uses 30-day historical volatility from CoinGecko
 - Averages across all tokens in portfolio
 - Weighted by allocation percentage
+
