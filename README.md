@@ -401,3 +401,4 @@ Cinematic design system:
 - Real-time updates
 
 **Asset Table**:
+- Sortable columns
