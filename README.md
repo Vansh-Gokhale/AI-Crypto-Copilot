@@ -736,3 +736,4 @@ This project is licensed under MIT License.
 - UI/UX mentors
 
 **To Our Supporters**:
+- Early testers on Sepolia
