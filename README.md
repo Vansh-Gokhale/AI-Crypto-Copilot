@@ -672,3 +672,4 @@ This project is licensed under MIT License.
 - Not financial advice
 - Do your own research (DYOR)
 - Use at own risk
+- Test on testnet first
