@@ -178,3 +178,4 @@ v1/
 ├── public/                        # Static assets
 ├── package.json
 ├── tsconfig.json
+├── tailwind.config.js
