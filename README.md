@@ -150,3 +150,4 @@ v1/
 │   │   ├── layout.tsx            # Root layout with metadata
 │   │   ├── providers.tsx         # Wagmi + RainbowKit providers
 │   │   └── globals.css           # Global styles (Tailwind)
+│   │
