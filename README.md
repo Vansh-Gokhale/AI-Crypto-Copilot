@@ -104,3 +104,4 @@ Aureum Elite provides:
    └─→ AI analyzes risk, yield opportunities, market conditions
    └─→ Generates 1-3 ranked strategy recommendations
    └─→ Strategies include: protocol, amount, expected yield, risk level
+
