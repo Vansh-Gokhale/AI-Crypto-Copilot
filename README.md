@@ -477,3 +477,4 @@ User Action
 
 **Non-Custodial Design**:
 - App never controls private keys
+- No seed phrase exposure
