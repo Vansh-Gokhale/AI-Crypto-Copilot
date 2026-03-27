@@ -88,3 +88,4 @@ Aureum Elite provides:
 
 ```
 1. CONNECT WALLET
+   └─→ Click "Connect Wallet"
