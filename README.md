@@ -667,3 +667,4 @@ This project is licensed under MIT License.
 - Next.js (React framework)
 - Tailwind CSS (Styling)
 
+### Disclaimers
