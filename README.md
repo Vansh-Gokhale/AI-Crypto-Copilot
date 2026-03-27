@@ -359,3 +359,4 @@ WalletConnect v2 enables seamless mobile:
 - Rainbow
 - Coinbase Wallet
 - Ledger Live
+- Argent
