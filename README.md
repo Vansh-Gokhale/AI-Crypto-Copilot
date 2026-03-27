@@ -179,3 +179,4 @@ v1/
 ├── package.json
 ├── tsconfig.json
 ├── tailwind.config.js
+├── next.config.ts
