@@ -247,3 +247,4 @@ Analyze this portfolio:
 - Tokens: [USDC, ETH, DAI]
 - Risk Score: 35/100 (Safe)
 
+Recommend 3 strategies for yield farming:
