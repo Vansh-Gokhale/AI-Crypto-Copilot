@@ -660,3 +660,4 @@ This project is licensed under MIT License.
 
 **Built with**:
 - Aave Protocol (DeFi composability)
+- Wagmi & Viem (Web3 integration)
