@@ -814,3 +814,4 @@ A: Currently free. Only pay blockchain gas costs.
 **Q: Can I use on mobile?**
 A: Yes! QR code login via WalletConnect.
 
+**Q: Is this audited?**
