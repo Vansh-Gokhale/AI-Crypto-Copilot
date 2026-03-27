@@ -165,3 +165,4 @@ v1/
 │   │   ├── usePortfolio.ts       # Fetch + calculate portfolio data
 │   │   ├── useAIStrategy.ts      # Call Gemini for recommendations
 │   │   └── useAaveDeposit.ts     # Handle Aave supply transactions
+│   │
