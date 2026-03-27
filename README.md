@@ -700,3 +700,4 @@ This project is licensed under MIT License.
 - [Viem Guide](https://viem.sh)
 - [RainbowKit Setup](https://rainbowkit.com)
 
+### AI & Machine Learning
