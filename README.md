@@ -432,3 +432,4 @@ Strategy Generation
     ↓
 UI Rendering
     ├─→ PortfolioSummary
+    ├─→ AssetTable
