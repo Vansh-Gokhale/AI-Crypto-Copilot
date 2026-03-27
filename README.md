@@ -320,3 +320,4 @@ CoinGecko API provides market data:
 - 24h price change percentage
 - 7d price change
 - Market capitalization
+- Trading volume
