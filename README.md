@@ -48,3 +48,4 @@ Traditional DeFi dashboards are:
 - ❌ Fragmented across multiple apps
 - ❌ Lack intelligent analysis
 - ❌ Require manual protocol research
+- ❌ Don't work well on mobile
