@@ -481,3 +481,4 @@ User Action
 - User signs all transactions
 - Wallet handles all crypto operations
 
+**Smart Contract Security**:
