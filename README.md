@@ -360,3 +360,4 @@ WalletConnect v2 enables seamless mobile:
 - Coinbase Wallet
 - Ledger Live
 - Argent
+- All WalletConnect v2 compatible wallets (200+)
