@@ -778,3 +778,4 @@ Our mission:
 
 **Core Values**:
 - Transparency in all operations
+- User security as top priority
