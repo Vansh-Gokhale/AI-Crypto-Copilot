@@ -558,3 +558,4 @@ User Action
 ### E2E Tests (Planned)
 - Complete user journeys
 - Portfolio display verification
+- Strategy generation validation
