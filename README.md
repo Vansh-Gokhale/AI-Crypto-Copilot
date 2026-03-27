@@ -438,3 +438,4 @@ UI Rendering
     └─→ StrategyCards
     ↓
 User Action
+    └─→ Execute Strategy
