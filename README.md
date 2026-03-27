@@ -630,3 +630,4 @@ User Action
 
 **Community Channels**:
 - Discord for discussions
+- GitHub issues for bugs
