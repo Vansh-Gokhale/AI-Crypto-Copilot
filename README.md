@@ -805,3 +805,4 @@ Our mission:
 
 ### Common Questions (FAQ)
 
+**Q: Is my wallet data stored?**
