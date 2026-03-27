@@ -157,3 +157,4 @@ v1/
 │   │   ├── AssetTable.tsx        # Token list with balances
 │   │   ├── AllocationChart.tsx   # Donut chart visualization
 │   │   ├── RiskGauge.tsx         # Risk score gauge
+│   │   ├── StrategyCard.tsx      # AI strategy recommendations
