@@ -107,3 +107,4 @@ Aureum Elite provides:
 
 4. ONE-CLICK EXECUTION
    └─→ User selects top strategy
+   └─→ App handles: token approval → amount calculation → Aave supply
