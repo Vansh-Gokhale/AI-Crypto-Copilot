@@ -89,3 +89,4 @@ Aureum Elite provides:
 ```
 1. CONNECT WALLET
    └─→ Click "Connect Wallet"
+   └─→ Choose wallet (MetaMask, Phantom, Core, Trust, etc.)
