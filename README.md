@@ -416,3 +416,4 @@ Cinematic design system:
 User Wallet
     ↓
 Wagmi Hooks (useAccount, useBalance)
+    ↓
