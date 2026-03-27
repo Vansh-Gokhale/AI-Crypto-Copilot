@@ -234,3 +234,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 
 **Output Strategies**:
 - Protocol recommendation (e.g., Aave V3, Compound)
+- Action description (Supply, Borrow, Swap)
