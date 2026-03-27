@@ -664,3 +664,4 @@ This project is licensed under MIT License.
 - RainbowKit (Wallet UI)
 - CoinGecko (Market data)
 - Google Gemini (AI intelligence)
+- Next.js (React framework)
