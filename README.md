@@ -447,3 +447,4 @@ User Action
     Transaction Broadcasting
         ↓
     Portfolio Update
+```
