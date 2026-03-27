@@ -580,3 +580,4 @@ User Action
 
 ### Phase 3: Advanced AI
 - Personalized strategy recommendations
+- Market prediction models
