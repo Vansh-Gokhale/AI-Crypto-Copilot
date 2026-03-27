@@ -93,3 +93,4 @@ Aureum Elite provides:
    └─→ Scan QR code on mobile OR authorize on desktop
    └─→ Grant signature (no transaction costs)
 
+2. PORTFOLIO ANALYSIS
