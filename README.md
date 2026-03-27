@@ -299,3 +299,4 @@ Multi-factor risk assessment:
 **Final Score Calculation**:
 ```
 risk_score = (
+    concentration_risk * 0.40 +
