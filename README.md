@@ -520,3 +520,4 @@ User Action
 - Background refetching
 
 **Rendering Performance**:
+- Memoization of expensive components
