@@ -166,3 +166,4 @@ v1/
 │   │   ├── useAIStrategy.ts      # Call Gemini for recommendations
 │   │   └── useAaveDeposit.ts     # Handle Aave supply transactions
 │   │
+│   ├── config/
