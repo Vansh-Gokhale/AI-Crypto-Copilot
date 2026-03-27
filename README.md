@@ -518,3 +518,4 @@ User Action
 - Automatic cache invalidation
 - Stale-while-revalidate strategy
 - Background refetching
+
