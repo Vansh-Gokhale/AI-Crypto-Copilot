@@ -583,3 +583,4 @@ User Action
 - Market prediction models
 - Risk adjusted portfolio optimization
 - Sentiment analysis integration
+- Custom alert rules
