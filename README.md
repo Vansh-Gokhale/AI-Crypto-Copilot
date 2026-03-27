@@ -516,3 +516,4 @@ User Action
 **Data Fetching**:
 - React Query for caching and deduplication
 - Automatic cache invalidation
+- Stale-while-revalidate strategy
