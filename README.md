@@ -205,3 +205,4 @@ The application follows a hierarchical component structure:
 - AICopilot: AI interaction panel
 - StrategyCard: Individual strategy recommendations
 
+---
