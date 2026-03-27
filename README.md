@@ -240,3 +240,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Risk level assessment
 - Reasoning explanation
 
+**AI Prompt Structure**:
