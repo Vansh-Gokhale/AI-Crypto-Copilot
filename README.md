@@ -551,3 +551,4 @@ User Action
 
 ### Integration Tests
 - Wallet connection flows
+- Contract interaction simulation
