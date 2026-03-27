@@ -357,3 +357,4 @@ WalletConnect v2 enables seamless mobile:
 - Core (formerly Avalanche wallet)
 - Trust Wallet
 - Rainbow
+- Coinbase Wallet
