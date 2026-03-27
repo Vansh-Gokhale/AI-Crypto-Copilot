@@ -777,3 +777,4 @@ Our mission:
 5. Advance Web3 mainstream adoption
 
 **Core Values**:
+- Transparency in all operations
