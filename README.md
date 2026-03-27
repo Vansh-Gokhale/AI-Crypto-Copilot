@@ -224,3 +224,4 @@ Token detection uses multiple strategies:
 
 ### 2. AI-Powered Strategy Engine
 
+Integrates Google Gemini 2.0 Flash for intelligent analysis:
