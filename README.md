@@ -31,3 +31,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Installation & Setup](#installation--setup)
 - [Usage Guide](#usage-guide)
 - [Technology Stack](#technology-stack)
+- [Supported Networks](#supported-networks)
