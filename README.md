@@ -116,3 +116,4 @@ Aureum Elite provides:
    └─→ 24h performance tracking
    └─→ Yield accrual visualization
    └─→ New strategy recommendations every refresh
+```
