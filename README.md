@@ -739,3 +739,4 @@ This project is licensed under MIT License.
 - Early testers on Sepolia
 - Community feedback providers
 - Security researchers
+- Partners and advisors
