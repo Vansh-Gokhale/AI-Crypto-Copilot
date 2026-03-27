@@ -327,3 +327,4 @@ CoinGecko API provides market data:
 - Automatic refresh every 30 seconds
 - Manual refresh via button
 - Background sync when tab inactive
+
