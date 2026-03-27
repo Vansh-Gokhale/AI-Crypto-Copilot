@@ -509,3 +509,4 @@ User Action
 ### Frontend Performance
 
 **Code Splitting**:
+- Dynamic imports for heavy components
