@@ -391,3 +391,4 @@ Cinematic design system:
 **Allocation Donut Chart**:
 - Animated on load
 - Interactive hover states
+- Responsive sizing
