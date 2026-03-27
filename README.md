@@ -802,3 +802,4 @@ Our mission:
 - **UI/UX**: User Interface / User Experience
 - **MVP**: Minimum Viable Product
 - **DYOR**: Do Your Own Research
+
