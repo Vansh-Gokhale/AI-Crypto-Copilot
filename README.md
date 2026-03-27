@@ -300,3 +300,4 @@ Multi-factor risk assessment:
 ```
 risk_score = (
     concentration_risk * 0.40 +
+    volatility_risk * 0.35 +
