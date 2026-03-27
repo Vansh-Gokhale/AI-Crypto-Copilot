@@ -69,3 +69,4 @@ Aureum Elite provides:
 
 | Feature | Aureum Elite | Typical DeFi Dashboard | Advantage |
 |---------|-------------|----------------------|-----------|
+| **AI Strategy Engine** | ✅ Gemini 2.0 Flash | ❌ Manual research | Automated, personalized recommendations |
