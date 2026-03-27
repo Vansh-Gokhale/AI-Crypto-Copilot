@@ -711,3 +711,4 @@ This project is licensed under MIT License.
 
 **MVP Launch**: ✅ Complete
 - Core portfolio display
+- Risk scoring engine
