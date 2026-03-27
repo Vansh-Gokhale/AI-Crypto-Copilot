@@ -669,3 +669,4 @@ This project is licensed under MIT License.
 
 ### Disclaimers
 
+- Not financial advice
