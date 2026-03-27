@@ -533,3 +533,4 @@ User Action
 - Reduces RPC provider costs
 - Improves load time significantly
 
+**API Caching**:
