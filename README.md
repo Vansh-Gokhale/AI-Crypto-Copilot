@@ -483,3 +483,4 @@ User Action
 
 **Smart Contract Security**:
 - Only interact with audited contracts (Aave V3)
+- No custom contract deployments
