@@ -238,3 +238,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Amount optimization (% of portfolio)
 - Expected APY estimation
 - Risk level assessment
+- Reasoning explanation
