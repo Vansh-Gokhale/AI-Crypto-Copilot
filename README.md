@@ -402,3 +402,4 @@ Cinematic design system:
 
 **Asset Table**:
 - Sortable columns
+- Expandable rows
