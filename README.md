@@ -720,3 +720,4 @@ This project is licensed under MIT License.
 - Bug bounty program
 - Feature voting
 
+**Testnet Expansion**: 🔮 Planned
