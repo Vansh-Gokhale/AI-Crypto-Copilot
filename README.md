@@ -323,3 +323,4 @@ CoinGecko API provides market data:
 - Trading volume
 - All-time high/low
 
+**Update Frequency**:
