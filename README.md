@@ -276,3 +276,4 @@ Streamlines DeFi interactions to single button:
 
 Multi-factor risk assessment:
 
+**Concentration Risk (40% weight)**:
