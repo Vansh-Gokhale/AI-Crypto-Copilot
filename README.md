@@ -155,3 +155,4 @@ v1/
 │   │   ├── Header.tsx            # Navigation + wallet connect
 │   │   ├── PortfolioSummary.tsx  # Total USD value + changes
 │   │   ├── AssetTable.tsx        # Token list with balances
+│   │   ├── AllocationChart.tsx   # Donut chart visualization
