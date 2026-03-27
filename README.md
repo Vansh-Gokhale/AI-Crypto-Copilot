@@ -392,3 +392,4 @@ Cinematic design system:
 - Animated on load
 - Interactive hover states
 - Responsive sizing
+- Color-coded by token type
