@@ -663,3 +663,4 @@ This project is licensed under MIT License.
 - Wagmi & Viem (Web3 integration)
 - RainbowKit (Wallet UI)
 - CoinGecko (Market data)
+- Google Gemini (AI intelligence)
