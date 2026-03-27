@@ -475,3 +475,4 @@ User Action
 
 ### User Data Protection
 
+**Non-Custodial Design**:
