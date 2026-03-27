@@ -578,3 +578,4 @@ User Action
 - Limit orders and DCA
 - Portfolio snapshots and history
 
+### Phase 3: Advanced AI
