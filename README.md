@@ -404,3 +404,4 @@ Cinematic design system:
 - Sortable columns
 - Expandable rows
 - Inline editing (future)
+- Copy to clipboard buttons
