@@ -488,3 +488,4 @@ User Action
 - All write operations require user approval
 
 **API Security**:
+- CoinGecko: HTTPS only, no secrets
