@@ -78,3 +78,4 @@ Aureum Elite provides:
 | **Live Token Discovery** | ✅ Shows every token in wallet | ❌ Pre-defined token lists | Complete portfolio visibility |
 | **Real CoinGecko Pricing** | ✅ Live API, no key required | ✅ Varies by platform | Transparent, decentralized pricing |
 | **Portfolio Allocation Charts** | ✅ Real-time donut charts | ⚠️ Sometimes available | Beautiful data visualization |
+| **24h Change Tracking** | ✅ Per-token & portfolio | ⚠️ Sometimes available | Performance monitoring |
