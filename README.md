@@ -258,3 +258,4 @@ Format: JSON with protocol, amount, apy, risk, reasoning
 ### 3. One-Click Protocol Execution
 
 Streamlines DeFi interactions to single button:
+
