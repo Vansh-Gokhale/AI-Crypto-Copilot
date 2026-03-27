@@ -239,3 +239,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Expected APY estimation
 - Risk level assessment
 - Reasoning explanation
+
