@@ -32,3 +32,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 - [Usage Guide](#usage-guide)
 - [Technology Stack](#technology-stack)
 - [Supported Networks](#supported-networks)
+- [Supported Cryptocurrencies](#supported-cryptocurrencies)
