@@ -686,3 +686,4 @@ This project is licensed under MIT License.
 - Email: support@aureum-elite.com
 - GitHub: github.com/Vansh-Gokhale/AI-Crypto-Copilot
 
+---
