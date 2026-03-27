@@ -611,3 +611,4 @@ User Action
 5. Governance token ($AUR)
 
 **No Fees Currently**:
+- All features free for MVP
