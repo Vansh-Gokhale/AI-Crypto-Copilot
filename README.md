@@ -237,3 +237,4 @@ Integrates Google Gemini 2.0 Flash for intelligent analysis:
 - Action description (Supply, Borrow, Swap)
 - Amount optimization (% of portfolio)
 - Expected APY estimation
+- Risk level assessment
