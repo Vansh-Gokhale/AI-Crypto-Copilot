@@ -332,3 +332,4 @@ CoinGecko API provides market data:
 - Caches last known prices locally
 - Uses dummy prices if API unavailable
 - Alerts user to stale data
+
