@@ -305,3 +305,4 @@ risk_score = (
     (stablecoin_percentage * 0.10)
 ) * 100
 
+Color Mapping:
