@@ -405,3 +405,4 @@ Cinematic design system:
 - Expandable rows
 - Inline editing (future)
 - Copy to clipboard buttons
+
