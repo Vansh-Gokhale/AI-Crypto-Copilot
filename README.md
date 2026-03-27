@@ -10,3 +10,4 @@
 ![RainbowKit](https://img.shields.io/badge/RainbowKit-v2-ff6b6b)
 
 **Institutional-grade DeFi portfolio intelligence powered by AI**
+
