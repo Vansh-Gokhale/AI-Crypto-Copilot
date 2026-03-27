@@ -75,3 +75,4 @@ Aureum Elite provides:
 | **Luxury UI/UX** | ✅ Gold & black design system | ❌ Generic dashboards | Premium user experience |
 | **Multi-Chain Auto-Detection** | ✅ Mainnet + Sepolia + future chains | ❌ Single chain | Seamless chain switching |
 | **QR Mobile Login** | ✅ MetaMask/Phantom/Core/Trust | ❌ Desktop only | Mobile-native web3 experience |
+| **Live Token Discovery** | ✅ Shows every token in wallet | ❌ Pre-defined token lists | Complete portfolio visibility |
