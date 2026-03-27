@@ -692,3 +692,4 @@ This project is licensed under MIT License.
 
 ### DeFi Fundamentals
 - [Aave Documentation](https://docs.aave.com)
+- [Ethereum Basics](https://ethereum.org/learn)
