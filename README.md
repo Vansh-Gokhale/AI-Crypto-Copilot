@@ -758,3 +758,4 @@ This project is licensed under MIT License.
 - Mobile responsive: 100% compatible
 
 **Supported Assets**:
+- 30+ tokens on Ethereum
