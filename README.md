@@ -589,3 +589,4 @@ User Action
 - Portfolio sharing (anonymized)
 - Strategy marketplace
 - Community voting on recommendations
+- Leader boards and achievements
