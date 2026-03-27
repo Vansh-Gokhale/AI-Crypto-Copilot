@@ -156,3 +156,4 @@ v1/
 │   │   ├── PortfolioSummary.tsx  # Total USD value + changes
 │   │   ├── AssetTable.tsx        # Token list with balances
 │   │   ├── AllocationChart.tsx   # Donut chart visualization
+│   │   ├── RiskGauge.tsx         # Risk score gauge
