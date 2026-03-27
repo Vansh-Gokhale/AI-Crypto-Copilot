@@ -319,3 +319,4 @@ CoinGecko API provides market data:
 - Current USD price
 - 24h price change percentage
 - 7d price change
+- Market capitalization
