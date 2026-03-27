@@ -538,3 +538,4 @@ User Action
 - 1-hour cache for token metadata
 - Browser local storage for persistence
 - Graceful degradation on cache miss
+
