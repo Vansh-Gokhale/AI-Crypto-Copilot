@@ -531,3 +531,4 @@ User Action
 - Multicall contracts for batching
 - Single request instead of multiple
 - Reduces RPC provider costs
+- Improves load time significantly
