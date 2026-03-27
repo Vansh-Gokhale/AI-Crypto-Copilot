@@ -595,3 +595,4 @@ User Action
 ### Phase 5: Enterprise
 - Institutional account management
 - Multi-signature support
+- Compliance reporting
