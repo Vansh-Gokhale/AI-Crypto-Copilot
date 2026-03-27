@@ -115,3 +115,4 @@ Aureum Elite provides:
    └─→ Real-time balance updates
    └─→ 24h performance tracking
    └─→ Yield accrual visualization
+   └─→ New strategy recommendations every refresh
