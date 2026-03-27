@@ -442,3 +442,4 @@ User Action
         ↓
     Token Approval (if needed)
         ↓
+    Aave V3 Supply Call
