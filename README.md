@@ -780,3 +780,4 @@ Our mission:
 - Transparency in all operations
 - User security as top priority
 - Community-first development
+- Continuous innovation
