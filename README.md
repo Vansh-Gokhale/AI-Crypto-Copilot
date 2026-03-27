@@ -324,3 +324,4 @@ CoinGecko API provides market data:
 - All-time high/low
 
 **Update Frequency**:
+- Automatic refresh every 30 seconds
