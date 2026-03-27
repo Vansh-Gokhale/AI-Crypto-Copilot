@@ -373,3 +373,4 @@ Ready for expansion to 11+ networks:
 **Easy to Add**:
 - Polygon (chainId: 137)
 - Arbitrum One (chainId: 42161)
+- Optimism (chainId: 10)
