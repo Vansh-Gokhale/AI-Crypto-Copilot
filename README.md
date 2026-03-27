@@ -513,3 +513,4 @@ User Action
 - Route-based code splitting
 - Lazy loading of charts and tables
 
+**Data Fetching**:
