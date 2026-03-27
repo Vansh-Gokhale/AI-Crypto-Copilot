@@ -143,3 +143,4 @@ Empowering DeFi through AI intelligence.
 ### Directory Structure
 
 ```
+v1/
