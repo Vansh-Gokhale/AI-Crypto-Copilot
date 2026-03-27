@@ -47,3 +47,4 @@ Real-time analytics · AI strategy generation · One-click protocol execution ·
 Traditional DeFi dashboards are:
 - ❌ Fragmented across multiple apps
 - ❌ Lack intelligent analysis
+- ❌ Require manual protocol research
