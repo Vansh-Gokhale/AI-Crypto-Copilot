@@ -69,10 +69,30 @@ export function StrategyCard({ strategy, index }: StrategyCardProps) {
       </button>
 
       {showDetails && (
-        <div className="strategy-reasoning">
-          <p>{strategy.reasoning}</p>
-          <div className="strategy-amount">
-            Amount: <strong>{strategy.amount}</strong>
+        <div className="analysis-reasoning">
+          <p className="reasoning-text">{strategy.reasoning}</p>
+          <div className="explanation-grid">
+            <div className="explanation-item">
+              <span className="explanation-label">Recommended Amount</span>
+              <span className="explanation-value">{strategy.amount}</span>
+            </div>
+            <div className="explanation-item">
+              <span className="explanation-label">Risk Rating</span>
+              <span className="explanation-value" style={{ color: RISK_COLORS[strategy.risk] }}>{strategy.risk}</span>
+            </div>
+          </div>
+          <p className="reasoning-text" style={{ marginTop: '12px', opacity: 0.8 }}>
+            <strong>Risk Assessment:</strong> {strategy.riskReasoning}
+          </p>
+          <div className="confidence-score">
+            <span className="confidence-label">AI Confidence</span>
+            <div className="confidence-bg">
+              <div 
+                className="confidence-fill" 
+                style={{ width: `${strategy.confidenceScore}%` }}
+              ></div>
+            </div>
+            <span className="confidence-label">{strategy.confidenceScore}%</span>
           </div>
         </div>
       )}

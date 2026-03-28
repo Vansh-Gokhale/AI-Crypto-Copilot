@@ -12,6 +12,8 @@ export interface AIStrategy {
   estimatedApy: string;
   risk: "Low" | "Medium" | "High";
   reasoning: string;
+  confidenceScore: number;
+  riskReasoning: string;
 }
 
 export interface AIStrategyResult {
@@ -72,8 +74,10 @@ Return ONLY a JSON array (no markdown, no code blocks) with objects containing:
   "amount": "suggested amount with token",
   "estimatedApy": "X.X%",
   "risk": "Low" | "Medium" | "High",
-  "reasoning": "brief explanation"
-}`;
+  "reasoning": "brief explanation",
+  "confidenceScore": 0-100,
+  "riskReasoning": "detailed risk assessment"
+} padding it as a single line JSON string for each object.`;
 
         const result = await model.generateContent(prompt);
         const text = result.response.text();
@@ -120,6 +124,8 @@ function generateMockStrategies(tokens: TokenBalance[]): AIStrategy[] {
       estimatedApy: "4.8%",
       risk: "Low",
       reasoning: `Lend idle ${largest.symbol} on Aave V3 for stable yield. Aave is battle-tested with billions in TVL.`,
+      confidenceScore: 95,
+      riskReasoning: "Aave V3 has robust liquidation mechanisms and high liquidity, making it one of the safest DeFi protocols.",
     });
   }
 
@@ -134,6 +140,8 @@ function generateMockStrategies(tokens: TokenBalance[]): AIStrategy[] {
       risk: "Low",
       reasoning:
         "Stake ETH via Lido for stETH yield. Lido is the largest liquid staking protocol with deep liquidity.",
+      confidenceScore: 88,
+      riskReasoning: "Lido is highly decentralized but carries smart contract risk common to liquid staking protocols.",
     });
   }
 
@@ -147,6 +155,8 @@ function generateMockStrategies(tokens: TokenBalance[]): AIStrategy[] {
       risk: "Medium",
       reasoning:
         "Consider diversifying into stablecoins to access lending yield opportunities.",
+      confidenceScore: 75,
+      riskReasoning: "Swapping assets involves market timing risk and price slippage depending on DEX liquidity.",
     });
   }
 

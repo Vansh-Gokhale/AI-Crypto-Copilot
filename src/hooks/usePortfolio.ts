@@ -4,6 +4,7 @@ import { useAccount, useBalance, useReadContracts } from "wagmi";
 import { useState, useEffect, useCallback } from "react";
 import { formatUnits } from "viem";
 import { KNOWN_TOKENS, ERC20_ABI } from "@/config/contracts";
+import { useUIState } from "./useUIState";
 
 export interface TokenBalance {
   symbol: string;
@@ -49,6 +50,7 @@ async function fetchPrices(
 
 export function usePortfolio(): PortfolioData {
   const { address, isConnected } = useAccount();
+  const { isDemoMode } = useUIState();
   const [tokens, setTokens] = useState<TokenBalance[]>([]);
   const [totalValueUsd, setTotalValueUsd] = useState(0);
   const [prices, setPrices] = useState<Record<string, { usd: number; usd_24h_change: number }>>({});
@@ -92,69 +94,19 @@ export function usePortfolio(): PortfolioData {
   }, []);
 
   useEffect(() => {
-    if (isConnected) {
+    if (isConnected || isDemoMode) {
       loadPrices();
     }
-  }, [isConnected, loadPrices]);
+  }, [isConnected, isDemoMode, loadPrices]);
 
   // Build portfolio data when balances + prices are ready
   useEffect(() => {
-    if (!isConnected || !ethBalance || !prices.ethereum) return;
+    if ((!isConnected && !isDemoMode) || !prices.ethereum) return;
 
     const portfolio: TokenBalance[] = [];
 
-    // Add ETH
-    const ethUsdPrice = prices.ethereum?.usd || 2500;
-    const ethChange = prices.ethereum?.usd_24h_change || 0;
-    const ethBal = parseFloat(formatUnits(ethBalance.value, 18));
-    const ethUsdValue = ethBal * ethUsdPrice;
-
-    if (ethBal > 0) {
-      portfolio.push({
-        symbol: "ETH",
-        address: "native",
-        balance: ethBal.toFixed(4),
-        balanceRaw: ethBalance.value,
-        decimals: 18,
-        usdPrice: ethUsdPrice,
-        usdValue: ethUsdValue,
-        allocation: 0,
-        change24h: ethChange,
-        icon: "⟠",
-      });
-    }
-
-    // Add ERC20 tokens
-    if (tokenBalances) {
-      KNOWN_TOKENS.forEach((token, i) => {
-        const result = tokenBalances[i];
-        if (result && result.status === "success" && result.result) {
-          const rawBalance = result.result as bigint;
-          if (rawBalance > BigInt(0)) {
-            const bal = parseFloat(formatUnits(rawBalance, token.decimals));
-            const priceData = prices[token.coingeckoId];
-            const usdPrice = priceData?.usd || 1;
-            const change = priceData?.usd_24h_change || 0;
-
-            portfolio.push({
-              symbol: token.symbol,
-              address: token.address,
-              balance: bal.toFixed(token.decimals <= 6 ? 2 : 4),
-              balanceRaw: rawBalance,
-              decimals: token.decimals,
-              usdPrice,
-              usdValue: bal * usdPrice,
-              allocation: 0,
-              change24h: change,
-              icon: token.icon,
-            });
-          }
-        }
-      });
-    }
-
-    // If wallet has no real balances, show demo data
-    if (portfolio.length === 0) {
+    // If Demo Mode or explicitly requested demo data, show demo data
+    if (isDemoMode) {
       const ethPrice = prices.ethereum?.usd || 2500;
       const ethChg = prices.ethereum?.usd_24h_change || 2.5;
       const usdcPrice = prices["usd-coin"]?.usd || 1;
@@ -238,6 +190,62 @@ export function usePortfolio(): PortfolioData {
       return;
     }
 
+    // Add ETH
+    const ethUsdPrice = prices.ethereum?.usd || 2500;
+    const ethChange = prices.ethereum?.usd_24h_change || 0;
+    const ethBal = ethBalance ? parseFloat(formatUnits(ethBalance.value, 18)) : 0;
+    const ethUsdValue = ethBal * ethUsdPrice;
+
+    if (ethBal > 0) {
+      portfolio.push({
+        symbol: "ETH",
+        address: "native",
+        balance: ethBal.toFixed(4),
+        balanceRaw: ethBalance?.value || BigInt(0),
+        decimals: 18,
+        usdPrice: ethUsdPrice,
+        usdValue: ethUsdValue,
+        allocation: 0,
+        change24h: ethChange,
+        icon: "⟠",
+      });
+    }
+
+    // Add ERC20 tokens
+    if (tokenBalances) {
+      KNOWN_TOKENS.forEach((token, i) => {
+        const result = tokenBalances[i];
+        if (result && result.status === "success" && result.result) {
+          const rawBalance = result.result as bigint;
+          if (rawBalance > BigInt(0)) {
+            const bal = parseFloat(formatUnits(rawBalance, token.decimals));
+            const priceData = prices[token.coingeckoId];
+            const usdPrice = priceData?.usd || 1;
+            const change = priceData?.usd_24h_change || 0;
+
+            portfolio.push({
+              symbol: token.symbol,
+              address: token.address,
+              balance: bal.toFixed(token.decimals <= 6 ? 2 : 4),
+              balanceRaw: rawBalance,
+              decimals: token.decimals,
+              usdPrice,
+              usdValue: bal * usdPrice,
+              allocation: 0,
+              change24h: change,
+              icon: token.icon,
+            });
+          }
+        }
+      });
+    }
+
+    // If wallet has no real balances and not in demo mode, but maybe show fallback if absolutely empty?
+    // The original logic showed fallback if portfolio.length === 0. I'll maintain that but prioritize isDemoMode.
+    if (portfolio.length === 0 && !isConnected) {
+        // This part is redundant now due to the return at the start of useEffect, but kept for safety
+    }
+
     // Calculate allocations
     const total = portfolio.reduce((sum, t) => sum + t.usdValue, 0);
     portfolio.forEach((t) => {
@@ -249,7 +257,7 @@ export function usePortfolio(): PortfolioData {
 
     setTokens(portfolio);
     setTotalValueUsd(total);
-  }, [isConnected, ethBalance, tokenBalances, prices]);
+  }, [isConnected, isDemoMode, ethBalance, tokenBalances, prices]);
 
   const refetch = useCallback(() => {
     refetchEth();

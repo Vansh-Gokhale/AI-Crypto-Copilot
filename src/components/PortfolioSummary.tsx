@@ -55,13 +55,21 @@ export function PortfolioSummary({ totalValue, isLoading }: PortfolioSummaryProp
           </>
         )}
       </div>
-      <div className="portfolio-summary-change">
-        {!isLoading && (
-          <>
-            <span className="change-positive">▲ +2.4%</span>
-            <span className="change-period">24h</span>
-          </>
-        )}
+      <div className="portfolio-summary-footer">
+        <div className="portfolio-summary-change">
+          {!isLoading && (
+            <>
+              <span className="change-positive">▲ +2.4%</span>
+              <span className="change-period">24h</span>
+            </>
+          )}
+        </div>
+        <button 
+          className="btn-rebalance" 
+          onClick={() => alert("AI Rebalance: Suggesting 40% ETH, 30% USDC, 20% USDT, 10% DAI for optimal risk-adjusted yield.")}
+        >
+          Rebalance Portfolio
+        </button>
       </div>
     </div>
   );

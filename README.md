@@ -70,8 +70,14 @@ Aureum Elite provides:
 | Feature | Aureum Elite | Typical DeFi Dashboard | Advantage |
 |---------|-------------|----------------------|-----------|
 | **AI Strategy Engine** | ✅ Gemini 2.0 Flash | ❌ Manual research | Automated, personalized recommendations |
+| **AI Auto Mode** | ✅ One-click automation | ❌ Manual execution | Hands-free DeFi management |
+| **Explainable AI** | ✅ Confidence & Reasoning | ❌ Black-box output | Transparent AI decision making |
 | **One-Click Aave Deposit** | ✅ Full approval + supply flow | ❌ Navigate to app.aave.com | Save 3-5 clicks, reduce errors |
+| **Portfolio History** | ✅ Snapshots & Charts | ❌ Current view only | Performance tracking over time |
 | **Risk Scoring** | ✅ Weighted portfolio model | ❌ None | Data-driven risk assessment |
+| **Smart Alerts** | ✅ Real-time Notifications | ❌ Manual monitoring | Never miss a price/APY change |
+| **What-If Simulator** | ✅ Impact Projection | ❌ Guesswork | Data-driven decision support |
+| **Export Feature** | ✅ CSV/Reporting | ❌ Copy-paste | Easy bookkeeping and analysis |
 | **Luxury UI/UX** | ✅ Gold & black design system | ❌ Generic dashboards | Premium user experience |
 | **Multi-Chain Auto-Detection** | ✅ Mainnet + Sepolia + future chains | ❌ Single chain | Seamless chain switching |
 | **QR Mobile Login** | ✅ MetaMask/Phantom/Core/Trust | ❌ Desktop only | Mobile-native web3 experience |
@@ -152,19 +158,24 @@ v1/
 │   │   └── globals.css           # Global styles (Tailwind)
 │   │
 │   ├── components/
-│   │   ├── Header.tsx            # Navigation + wallet connect
-│   │   ├── PortfolioSummary.tsx  # Total USD value + changes
-│   │   ├── AssetTable.tsx        # Token list with balances
+│   │   ├── Header.tsx            # Nav + wallet + Smart Alerts
+│   │   ├── PortfolioSummary.tsx  # USD value + Rebalance button
+│   │   ├── AssetTable.tsx        # Token list + CSV Export
 │   │   ├── AllocationChart.tsx   # Donut chart visualization
 │   │   ├── RiskGauge.tsx         # Risk score gauge
-│   │   ├── StrategyCard.tsx      # AI strategy recommendations
-│   │   ├── AICopilot.tsx         # Gemini AI integration
-│   │   └── Sidebar.tsx           # Navigation sidebar
+│   │   ├── StrategyCard.tsx      # AI strategy + Explainable AI
+│   │   ├── AICopilot.tsx         # Chat interface + Neural Hub
+│   │   ├── Sidebar.tsx           # Navigation sidebar
+│   │   ├── PortfolioHistory.tsx  # Historical performance chart
+│   │   └── Simulator.tsx         # What-If scenario projection
 │   │
 │   ├── hooks/
-│   │   ├── usePortfolio.ts       # Fetch + calculate portfolio data
-│   │   ├── useAIStrategy.ts      # Call Gemini for recommendations
-│   │   └── useAaveDeposit.ts     # Handle Aave supply transactions
+│   │   ├── usePortfolio.ts       # Portfolio + Demo Mode
+│   │   ├── useAIStrategy.ts      # Gemini AI strategy engine
+│   │   ├── useAaveDeposit.ts     # Aave supply transactions
+│   │   ├── useUIState.tsx        # Global settings (Auto/Demo)
+│   │   ├── useAlerts.ts          # Smart notification logic
+│   │   └── useAutoExecutor.ts    # AI Auto Mode execution
 │   │
 │   ├── config/
 │   │   ├── contracts.ts          # Token addresses + ABIs
@@ -402,9 +413,29 @@ Cinematic design system:
 
 **Asset Table**:
 - Sortable columns
-- Expandable rows
+- CSV Export functionality
 - Inline editing (future)
 - Copy to clipboard buttons
+
+### 9. AI Auto Mode (Automation)
+- **Dynamic Execution**: Auto-trigger top strategies based on AI analysis.
+- **Configurable Toggles**: Enable/disable automation in the header.
+- **Hands-free Growth**: AI optimizes your portfolio positions automatically.
+
+### 10. Portfolio History & Snapshots
+- **Time-Series Tracking**: Store hourly/daily snapshots in local storage.
+- **Performance Visualization**: Beautiful area charts showing value over time.
+- **Historical Analysis**: Review how your AI-assisted decisions impacted growth.
+
+### 11. What-If Simulator
+- **Price Sensitivity**: Simulate how portfolio value shifts with market moves.
+- **Scenario Planning**: Plan for both bull and bear markets.
+- **Impact Analysis**: See projected gains before committing funds.
+
+### 12. Explainable AI & Chat
+- **Confidence Scoring**: Real-time reliability score for every AI suggestion.
+- **Deep Reasoning**: Detailed logic behind every protocol recommendation.
+- **Conversational AI**: Chat directly with your portfolio agent for insights.
 
 ---
 

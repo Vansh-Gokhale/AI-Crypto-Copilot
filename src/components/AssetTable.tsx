@@ -8,6 +8,33 @@ interface AssetTableProps {
 }
 
 export function AssetTable({ tokens, isLoading }: AssetTableProps) {
+  const handleExport = () => {
+    const headers = ["Symbol", "Balance", "USD Price", "USD Value", "Allocation %", "24h Change %"];
+    const rows = tokens.map(t => [
+      t.symbol,
+      t.balance,
+      t.usdPrice.toFixed(2),
+      t.usdValue.toFixed(2),
+      t.allocation.toFixed(2),
+      t.change24h.toFixed(2)
+    ]);
+    
+    const csvContent = [
+      headers.join(","),
+      ...rows.map(r => r.join(","))
+    ].join("\n");
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `aureum_portfolio_${new Date().toISOString().split('T')[0]}.csv`);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   if (isLoading) {
     return (
       <div className="asset-table-card">
@@ -39,7 +66,12 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
 
   return (
     <div className="asset-table-card">
-      <h3 className="card-title">Assets</h3>
+      <div className="card-header-flex">
+        <h3 className="card-title">Assets</h3>
+        <button className="btn-export" onClick={handleExport}>
+          Export CSV
+        </button>
+      </div>
       <div className="asset-table-wrapper">
         <table className="asset-table">
           <thead>

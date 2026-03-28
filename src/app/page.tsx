@@ -34,8 +34,15 @@ const PARTICLE_POSITIONS = [
   { x: 58, y: 5, delay: 0.9, duration: 3.9 },
 ];
 
+import { useUIState } from "@/hooks/useUIState";
+
+import { PortfolioHistory } from "@/components/PortfolioHistory";
+import { Simulator } from "@/components/Simulator";
+
 export default function Home() {
-  const { isConnected } = useAccount();
+  const { isConnected: isWalletConnected } = useAccount();
+  const { isDemoMode } = useUIState();
+  const isConnected = isWalletConnected || isDemoMode;
   const portfolio = usePortfolio();
   const ai = useAIStrategy();
 
@@ -126,7 +133,17 @@ export default function Home() {
               isLoading={portfolio.isLoading}
             />
             <div className="dashboard-charts-row">
-              <AllocationChart tokens={portfolio.tokens} />
+              <PortfolioHistory totalValue={portfolio.totalValueUsd} />
+              <div 
+                style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: '1fr 1fr', 
+                    gap: '20px' 
+                }}
+              >
+                  <AllocationChart tokens={portfolio.tokens} />
+                  <Simulator totalValue={portfolio.totalValueUsd} />
+              </div>
             </div>
             <AssetTable
               tokens={portfolio.tokens}
