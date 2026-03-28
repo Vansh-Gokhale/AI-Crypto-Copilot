@@ -52,6 +52,7 @@ export default function Home() {
   const portfolio = usePortfolio();
   const ai = useAIStrategy();
   const [activeGoal, setActiveGoal] = useState("");
+  const [activeTab, setActiveTab] = useState("dashboard");
 
   const handleAnalyze = () => {
     ai.analyze(portfolio.tokens, portfolio.totalValueUsd, activeGoal);
@@ -130,47 +131,62 @@ export default function Home() {
 
   return (
     <div className="dashboard-layout">
-      <Sidebar />
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="dashboard-main">
         <Header />
         <div className="dashboard-content">
-          <div className="dashboard-center">
-            <PortfolioSummary
-              totalValue={portfolio.totalValueUsd}
-              isLoading={portfolio.isLoading}
-            />
-            <div className="dashboard-charts-row">
-              <PortfolioHistory totalValue={portfolio.totalValueUsd} />
-              <div 
-                style={{ 
-                    display: 'grid', 
-                    gridTemplateColumns: '1fr 1fr', 
-                    gap: '20px' 
-                }}
-              >
-                  <AllocationChart tokens={portfolio.tokens} />
-                  <Simulator totalValue={portfolio.totalValueUsd} />
+          {(activeTab === "dashboard" || activeTab === "portfolio") && (
+            <div className="dashboard-center" style={{ display: activeTab === 'copilot' ? 'none' : 'flex' }}>
+              <PortfolioSummary
+                totalValue={portfolio.totalValueUsd}
+                isLoading={portfolio.isLoading}
+              />
+              <div className="dashboard-charts-row">
+                <PortfolioHistory totalValue={portfolio.totalValueUsd} />
+                <div 
+                  style={{ 
+                      display: 'grid', 
+                      gridTemplateColumns: '1fr 1fr', 
+                      gap: '20px' 
+                  }}
+                >
+                    <AllocationChart tokens={portfolio.tokens} />
+                    <Simulator totalValue={portfolio.totalValueUsd} />
+                </div>
               </div>
+              <Heatmap tokens={portfolio.tokens} />
+              <Goals goal={activeGoal} setGoal={setActiveGoal} />
+              <AssetTable
+                tokens={portfolio.tokens}
+                isLoading={portfolio.isLoading}
+              />
             </div>
-            <Heatmap tokens={portfolio.tokens} />
-            <Goals goal={activeGoal} setGoal={setActiveGoal} />
-            <AssetTable
-              tokens={portfolio.tokens}
-              isLoading={portfolio.isLoading}
-            />
-          </div>
-          <div className="dashboard-right">
-            <AICopilot
-              tokens={portfolio.tokens}
-              strategies={ai.strategies}
-              isAnalyzing={ai.isLoading}
-              aiError={ai.error}
-              onAnalyze={handleAnalyze}
-            />
-            <SpendPanel totalValueUsd={portfolio.totalValueUsd} />
-            <WhaleActivity />
-            <ActivityFeed />
-          </div>
+          )}
+
+          {(activeTab === "dashboard" || activeTab === "copilot") && (
+            <div 
+                className="dashboard-right" 
+                style={{ 
+                    width: activeTab === 'copilot' ? '100%' : '380px', 
+                    borderLeft: activeTab === 'copilot' ? 'none' : '1px solid var(--border-color)',
+                    padding: activeTab === 'copilot' ? '24px' : '0',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: activeTab === 'copilot' ? '20px' : '0'
+                }}
+            >
+              <AICopilot
+                tokens={portfolio.tokens}
+                strategies={ai.strategies}
+                isAnalyzing={ai.isLoading}
+                aiError={ai.error}
+                onAnalyze={handleAnalyze}
+              />
+              <SpendPanel totalValueUsd={portfolio.totalValueUsd} />
+              <WhaleActivity />
+              <ActivityFeed />
+            </div>
+          )}
         </div>
       </div>
     </div>
