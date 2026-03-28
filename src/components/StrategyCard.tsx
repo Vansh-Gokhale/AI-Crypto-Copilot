@@ -10,16 +10,16 @@ interface StrategyCardProps {
 }
 
 const ACTION_ICONS: Record<string, string> = {
-  Lend: "🏦",
-  Stake: "🔒",
-  Swap: "🔄",
-  "Provide Liquidity": "💧",
+  Lend: "◈",
+  Stake: "◆",
+  Swap: "◇",
+  "Provide Liquidity": "◈",
 };
 
 const RISK_COLORS: Record<string, string> = {
-  Low: "#10B981",
-  Medium: "#F59E0B",
-  High: "#EF4444",
+  Low: "#4CAF76",
+  Medium: "#D4AF37",
+  High: "#C45C5C",
 };
 
 export function StrategyCard({ strategy, index }: StrategyCardProps) {
@@ -38,13 +38,11 @@ export function StrategyCard({ strategy, index }: StrategyCardProps) {
     }
   };
 
-  const borderColor = `var(--accent-${(index % 3) + 1})`;
-
   return (
-    <div className="strategy-card" style={{ borderLeftColor: borderColor }}>
+    <div className="strategy-card">
       <div className="strategy-card-header">
         <div className="strategy-icon">
-          {ACTION_ICONS[strategy.action] || "📈"}
+          {ACTION_ICONS[strategy.action] || "◈"}
         </div>
         <div className="strategy-info">
           <h4 className="strategy-title">
@@ -84,7 +82,7 @@ export function StrategyCard({ strategy, index }: StrategyCardProps) {
           <>
             {status === "idle" && (
               <button className="btn-execute" onClick={handleExecute}>
-                <span className="btn-execute-icon">⚡</span>
+                <span className="btn-execute-icon">◈</span>
                 Execute Strategy
               </button>
             )}
@@ -108,7 +106,7 @@ export function StrategyCard({ strategy, index }: StrategyCardProps) {
             )}
             {status === "success" && (
               <div className="tx-success">
-                <span>✅ Transaction Successful!</span>
+                <span>✓ Transaction Successful</span>
                 {txHash && (
                   <a
                     href={`https://sepolia.etherscan.io/tx/${txHash}`}
@@ -126,7 +124,7 @@ export function StrategyCard({ strategy, index }: StrategyCardProps) {
             )}
             {status === "error" && (
               <div className="tx-error">
-                <span>❌ {error || "Transaction failed"}</span>
+                <span>✕ {error || "Transaction failed"}</span>
                 <button className="btn-reset" onClick={reset}>
                   Try Again
                 </button>
@@ -135,7 +133,7 @@ export function StrategyCard({ strategy, index }: StrategyCardProps) {
           </>
         ) : (
           <button className="btn-execute btn-disabled" disabled title="Only Aave USDC deposit is available in MVP">
-            <span className="btn-execute-icon">⚡</span>
+            <span className="btn-execute-icon">◈</span>
             Execute Strategy
           </button>
         )}

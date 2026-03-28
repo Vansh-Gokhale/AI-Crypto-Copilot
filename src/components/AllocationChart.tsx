@@ -6,7 +6,8 @@ interface AllocationChartProps {
   tokens: TokenBalance[];
 }
 
-const CHART_COLORS = ["#6366F1", "#22D3EE", "#D946EF", "#F59E0B", "#10B981", "#F43F5E"];
+// All gold/champagne tones
+const CHART_COLORS = ["#D4AF37", "#E8C95A", "#8B7327", "#C9A84C", "#B89B3E", "#A68A2B", "#F0D878", "#9B8532"];
 
 export function AllocationChart({ tokens }: AllocationChartProps) {
   if (tokens.length === 0) return null;
@@ -32,7 +33,7 @@ export function AllocationChart({ tokens }: AllocationChartProps) {
         <div className="donut-chart" style={{ background: gradient }}>
           <div className="donut-hole">
             <span className="donut-label">{tokens.length}</span>
-            <span className="donut-sub">Assets</span>
+            <span className="donut-sub">Core Assets</span>
           </div>
         </div>
         <div className="allocation-legend">

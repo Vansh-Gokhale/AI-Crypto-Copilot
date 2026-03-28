@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 const navItems = [
-  { id: "dashboard", icon: "📊", label: "Dashboard" },
-  { id: "portfolio", icon: "💼", label: "Portfolio" },
-  { id: "copilot", icon: "🤖", label: "AI Copilot" },
+  { id: "dashboard", icon: "◈", label: "Dashboard" },
+  { id: "portfolio", icon: "◆", label: "Portfolio" },
+  { id: "copilot", icon: "◇", label: "Neural" },
 ];
 
 export function Sidebar() {
@@ -14,7 +14,7 @@ export function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <div className="logo-icon">⟠</div>
+        <div className="logo-icon">AU</div>
       </div>
       <nav className="sidebar-nav">
         {navItems.map((item) => (
@@ -30,10 +30,7 @@ export function Sidebar() {
         ))}
       </nav>
       <div className="sidebar-footer">
-        <button className="sidebar-nav-item" title="Settings">
-          <span className="sidebar-nav-icon">⚙️</span>
-          <span className="sidebar-nav-label">Settings</span>
-        </button>
+        <div className="sidebar-monogram">A</div>
       </div>
     </aside>
   );

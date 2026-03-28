@@ -29,7 +29,7 @@ export function AICopilot({
     <div className="ai-copilot-panel">
       <div className="ai-copilot-header">
         <h2 className="ai-copilot-title">
-          <span className="ai-icon">🤖</span> AI Copilot
+          <span className="ai-icon">◈</span> Neural Hub
         </h2>
       </div>
 
@@ -42,7 +42,7 @@ export function AICopilot({
       <div className="sentiment-card">
         <h3 className="card-title">Market Sentiment</h3>
         <div className="sentiment-indicator">
-          <span className="sentiment-emoji">📈</span>
+          <span className="sentiment-emoji">◆</span>
           <span className="sentiment-text bullish">Bullish</span>
         </div>
         <p className="sentiment-note">Based on current market trends</p>
@@ -61,7 +61,7 @@ export function AICopilot({
           </>
         ) : (
           <>
-            <span className="btn-analyze-icon">✨</span>
+            <span className="btn-analyze-icon">◈</span>
             Analyze Portfolio
           </>
         )}

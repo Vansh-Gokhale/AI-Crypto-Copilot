@@ -1,7 +1,6 @@
 "use client";
 
 import { useAccount } from "wagmi";
-import { useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
@@ -50,30 +49,53 @@ export default function Home() {
         <div className="connect-card">
           <div className="connect-glow"></div>
           <div className="connect-content">
-            <div className="connect-icon-wrapper">
-              <span className="connect-icon">⟠</span>
+            {/* Left Branding Panel */}
+            <div className="connect-brand-panel">
+              <div className="aureum-wordmark">AUREUM</div>
+              <h1 className="connect-headline">
+                THE FUTURE OF INVESTING,{" "}
+                <span className="gold">REFINED</span> BY INTELLIGENCE.
+              </h1>
+              <p className="connect-tagline">
+                AI-powered portfolio analysis meets institutional-grade DeFi
+                execution. Connect your wallet to begin.
+              </p>
             </div>
-            <h1 className="connect-title">
-              <span className="text-accent">AI</span> Crypto Copilot
-            </h1>
-            <p className="connect-subtitle">
-              Connect your wallet to analyze your portfolio with AI-powered DeFi strategies
-            </p>
-            <div className="connect-button-wrapper mt-6">
-              <ConnectButton />
-            </div>
-            <div className="connect-features">
-              <div className="connect-feature">
-                <span className="feature-icon">📊</span>
-                <span>Portfolio Analysis</span>
-              </div>
-              <div className="connect-feature">
-                <span className="feature-icon">🤖</span>
-                <span>AI Strategies</span>
-              </div>
-              <div className="connect-feature">
-                <span className="feature-icon">⚡</span>
-                <span>One-Click Execute</span>
+
+            {/* Right Wallet Panel */}
+            <div className="connect-wallet-panel">
+              <div className="connect-wallet-card">
+                <div className="connect-icon-wrapper">
+                  <span className="connect-icon">⟠</span>
+                </div>
+                <h2 className="connect-title">
+                  <span className="text-accent">Connect</span> Wallet
+                </h2>
+                <p className="connect-subtitle">
+                  Securely connect your wallet to analyze your portfolio with
+                  AI-powered DeFi strategies
+                </p>
+                <div className="connect-button-wrapper">
+                  <ConnectButton />
+                </div>
+                <div className="connect-features">
+                  <div className="connect-feature">
+                    <span className="feature-icon">◆</span>
+                    <span>Portfolio Analysis</span>
+                  </div>
+                  <div className="connect-feature">
+                    <span className="feature-icon">◆</span>
+                    <span>AI Strategies</span>
+                  </div>
+                  <div className="connect-feature">
+                    <span className="feature-icon">◆</span>
+                    <span>One-Click Execute</span>
+                  </div>
+                </div>
+                <div className="connect-security-badge">
+                  <span className="security-dot"></span>
+                  <span>Bank-grade security</span>
+                </div>
               </div>
             </div>
           </div>

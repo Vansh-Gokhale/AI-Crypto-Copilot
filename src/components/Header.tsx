@@ -7,7 +7,7 @@ export function Header() {
     <header className="header">
       <div className="header-left">
         <h1 className="header-title">
-          <span className="header-title-accent">AI</span> Crypto Copilot
+          <span className="header-title-accent">AUREUM</span> ELITE
         </h1>
         <span className="header-badge">Beta</span>
       </div>

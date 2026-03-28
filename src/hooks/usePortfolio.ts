@@ -153,6 +153,91 @@ export function usePortfolio(): PortfolioData {
       });
     }
 
+    // If wallet has no real balances, show demo data
+    if (portfolio.length === 0) {
+      const ethPrice = prices.ethereum?.usd || 2500;
+      const ethChg = prices.ethereum?.usd_24h_change || 2.5;
+      const usdcPrice = prices["usd-coin"]?.usd || 1;
+      const usdcChg = prices["usd-coin"]?.usd_24h_change || 0.01;
+      const usdtPrice = prices["tether"]?.usd || 1;
+      const usdtChg = prices["tether"]?.usd_24h_change || 0.02;
+      const daiPrice = prices["dai"]?.usd || 1;
+      const daiChg = prices["dai"]?.usd_24h_change || -0.01;
+
+      const demoTokens: TokenBalance[] = [
+        {
+          symbol: "ETH",
+          address: "native",
+          balance: "1.4500",
+          balanceRaw: BigInt("1450000000000000000"),
+          decimals: 18,
+          usdPrice: ethPrice,
+          usdValue: 1.45 * ethPrice,
+          allocation: 0,
+          change24h: ethChg,
+          icon: "⟠",
+        },
+        {
+          symbol: "USDC",
+          address: "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8",
+          balance: "2500.00",
+          balanceRaw: BigInt("2500000000"),
+          decimals: 6,
+          usdPrice: usdcPrice,
+          usdValue: 2500 * usdcPrice,
+          allocation: 0,
+          change24h: usdcChg,
+          icon: "💵",
+        },
+        {
+          symbol: "USDT",
+          address: "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0",
+          balance: "1800.00",
+          balanceRaw: BigInt("1800000000"),
+          decimals: 6,
+          usdPrice: usdtPrice,
+          usdValue: 1800 * usdtPrice,
+          allocation: 0,
+          change24h: usdtChg,
+          icon: "₮",
+        },
+        {
+          symbol: "DAI",
+          address: "0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357",
+          balance: "750.0000",
+          balanceRaw: BigInt("750000000000000000000"),
+          decimals: 18,
+          usdPrice: daiPrice,
+          usdValue: 750 * daiPrice,
+          allocation: 0,
+          change24h: daiChg,
+          icon: "◈",
+        },
+        {
+          symbol: "WETH",
+          address: "0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c",
+          balance: "0.5200",
+          balanceRaw: BigInt("520000000000000000"),
+          decimals: 18,
+          usdPrice: ethPrice,
+          usdValue: 0.52 * ethPrice,
+          allocation: 0,
+          change24h: ethChg,
+          icon: "⟠",
+        },
+      ];
+
+      const demoTotal = demoTokens.reduce((sum, t) => sum + t.usdValue, 0);
+      demoTokens.forEach((t) => {
+        t.allocation = demoTotal > 0 ? (t.usdValue / demoTotal) * 100 : 0;
+      });
+      demoTokens.sort((a, b) => b.usdValue - a.usdValue);
+
+      setTokens(demoTokens);
+      setTotalValueUsd(demoTotal);
+      return;
+    }
+
     // Calculate allocations
     const total = portfolio.reduce((sum, t) => sum + t.usdValue, 0);
     portfolio.forEach((t) => {

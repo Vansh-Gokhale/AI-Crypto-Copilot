@@ -34,7 +34,7 @@ export function PortfolioSummary({ totalValue, isLoading }: PortfolioSummaryProp
   return (
     <div className="portfolio-summary">
       <div className="portfolio-summary-header">
-        <span className="portfolio-summary-label">Total Balance</span>
+        <span className="portfolio-summary-label">Vault Valuation</span>
         <span className="portfolio-summary-badge">
           <span className="pulse-dot"></span>
           Live

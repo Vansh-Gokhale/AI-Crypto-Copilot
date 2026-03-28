@@ -9,10 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AI Crypto Copilot — DeFi Portfolio Analyzer",
+  title: "Aureum Elite — AI Crypto Copilot",
   description:
-    "Connect your wallet, analyze your portfolio with AI, and execute DeFi strategies in one click.",
-  keywords: ["DeFi", "crypto", "AI", "portfolio", "Aave", "wallet"],
+    "Premium AI-powered DeFi portfolio analyzer. Connect your wallet, analyze with AI, and execute strategies in one click.",
+  keywords: ["DeFi", "crypto", "AI", "portfolio", "Aave", "wallet", "Aureum"],
 };
 
 export default function RootLayout({
@@ -22,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} dark`}>
-      <body>
-        <Providers>{children}</Providers>
-      </body>
+      <body><Providers>{children}</Providers></body>
     </html>
   );
 }

@@ -1,34 +1,390 @@
-import { getDefaultConfig, type Wallet } from "@rainbow-me/rainbowkit";
-import { walletConnectWallet, rainbowWallet, coinbaseWallet, metaMaskWallet } from "@rainbow-me/rainbowkit/wallets";
-import { sepolia, mainnet } from "wagmi/chains";
+import { getDefaultConfig } from "@rainbow-me/rainbowkit";
+import {
+  argentWallet,
+  backpackWallet,
+  bestWallet,
+  bifrostWallet,
+  binanceWallet,
+  bitgetWallet,
+  bitskiWallet,
+  bitverseWallet,
+  bloomWallet,
+  braveWallet,
+  bybitWallet,
+  clvWallet,
+  coin98Wallet,
+  coinbaseWallet,
+  compassWallet,
+  coreWallet,
+  ctrlWallet,
+  dawnWallet,
+  enkryptWallet,
+  foxWallet,
+  frameWallet,
+  frontierWallet,
+  gateWallet,
+  imTokenWallet,
+  injectedWallet,
+  kaiaWallet,
+  krakenWallet,
+  kresusWallet,
+  ledgerWallet,
+  magicEdenWallet,
+  metaMaskWallet,
+  mewWallet,
+  nestWallet,
+  oktoWallet,
+  okxWallet,
+  omniWallet,
+  oneInchWallet,
+  oneKeyWallet,
+  phantomWallet,
+  rabbyWallet,
+  rainbowWallet,
+  ramperWallet,
+  roninWallet,
+  safeWallet,
+  safeheronWallet,
+  safepalWallet,
+  subWallet,
+  tahoWallet,
+  talismanWallet,
+  tokenaryWallet,
+  tokenPocketWallet,
+  trustWallet,
+  uniswapWallet,
+  valoraWallet,
+  walletConnectWallet,
+  wigwamWallet,
+  xPortalWallet,
+  zealWallet,
+  zerionWallet,
+  zilPayWallet,
+} from "@rainbow-me/rainbowkit/wallets";
+
+// --- All major chains ---
+import {
+  // Ethereum
+  mainnet,
+  sepolia,
+  goerli,
+  holesky,
+  // Arbitrum
+  arbitrum,
+  arbitrumNova,
+  arbitrumSepolia,
+  // Optimism
+  optimism,
+  optimismSepolia,
+  // Base
+  base,
+  baseSepolia,
+  // Polygon
+  polygon,
+  polygonAmoy,
+  polygonZkEvm,
+  polygonZkEvmTestnet,
+  // BSC
+  bsc,
+  bscTestnet,
+  // Avalanche
+  avalanche,
+  avalancheFuji,
+  // Fantom
+  fantom,
+  fantomTestnet,
+  // zkSync
+  zkSync,
+  zkSyncSepoliaTestnet,
+  // Linea
+  linea,
+  lineaSepolia,
+  // Scroll
+  scroll,
+  scrollSepolia,
+  // Celo
+  celo,
+  celoAlfajores,
+  // Gnosis
+  gnosis,
+  gnosisChiado,
+  // Cronos
+  cronos,
+  cronosTestnet,
+  // Mantle
+  mantle,
+  mantleTestnet,
+  // Blast
+  blast,
+  blastSepolia,
+  // Mode
+  mode,
+  modeTestnet,
+  // Zora
+  zora,
+  zoraSepolia,
+  // Aurora
+  aurora,
+  auroraTestnet,
+  // Moonbeam
+  moonbeam,
+  moonriver,
+  moonbaseAlpha,
+  // Metis
+  metis,
+  // Filecoin
+  filecoin,
+  filecoinCalibration,
+  // Harmony
+  harmonyOne,
+  // Klaytn (Kaia)
+  klaytn,
+  klaytnBaobab,
+  // Flare
+  flare,
+  flareTestnet,
+  // Canto
+  canto,
+  // BOB
+  bob,
+  bobSepolia,
+  // Taiko
+  taiko,
+  taikoTestnetSepolia,
+  // Manta
+  manta,
+  mantaTestnet,
+  // Berachain
+  berachain,
+  berachainTestnetbArtio,
+  // Sei
+  sei,
+  seiTestnet,
+  // IoTeX
+  iotex,
+  iotexTestnet,
+  // Fuse
+  fuse,
+  fuseSparknet,
+  // Rootstock
+  rootstock,
+  rootstockTestnet,
+  // opBNB
+  opBNB,
+  opBNBTestnet,
+  // Kava
+  kava,
+  kavaTestnet,
+  // CoreDAO
+  coreDao,
+  // Telos
+  telos,
+  telosTestnet,
+  // Palm
+  palm,
+  palmTestnet,
+  // Lisk
+  lisk,
+  liskSepolia,
+  // Fraxtal
+  fraxtal,
+  fraxtalTestnet,
+  // Cyber
+  cyber,
+  cyberTestnet,
+  // Degen
+  degen,
+  // WorldChain
+  worldchain,
+  worldchainSepolia,
+  // Apechain
+  apeChain,
+  // Sonic (prev Fantom Sonic)
+  sonic,
+  sonicTestnet,
+} from "wagmi/chains";
 
 const projectId = process.env.NEXT_PUBLIC_WC_PROJECT_ID || "b56e18d47c72ab683b10814fe9495694";
 
-const metaMaskMobileQRWallet = (): Wallet => {
-  const baseWallet = walletConnectWallet({ projectId });
-  return {
-    ...baseWallet,
-    id: "metamask-mobile-qr",
-    name: "MetaMask (QR)",
-    iconUrl: "https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg",
-    iconBackground: "#fff",
-  };
-};
-
 export const config = getDefaultConfig({
-  appName: "AI Crypto Copilot",
+  appName: "Aureum Elite — AI Crypto Copilot",
   projectId,
-  chains: [sepolia, mainnet],
+  chains: [
+    // ─── Ethereum ───
+    mainnet,
+    sepolia,
+    goerli,
+    holesky,
+    // ─── Layer 2s ───
+    arbitrum,
+    arbitrumNova,
+    arbitrumSepolia,
+    optimism,
+    optimismSepolia,
+    base,
+    baseSepolia,
+    zkSync,
+    zkSyncSepoliaTestnet,
+    linea,
+    lineaSepolia,
+    scroll,
+    scrollSepolia,
+    blast,
+    blastSepolia,
+    mantle,
+    mantleTestnet,
+    mode,
+    modeTestnet,
+    zora,
+    zoraSepolia,
+    taiko,
+    taikoTestnetSepolia,
+    manta,
+    mantaTestnet,
+    bob,
+    bobSepolia,
+    fraxtal,
+    fraxtalTestnet,
+    lisk,
+    liskSepolia,
+    cyber,
+    cyberTestnet,
+    opBNB,
+    opBNBTestnet,
+    // ─── Polygon ───
+    polygon,
+    polygonAmoy,
+    polygonZkEvm,
+    polygonZkEvmTestnet,
+    // ─── BSC ───
+    bsc,
+    bscTestnet,
+    // ─── Avalanche ───
+    avalanche,
+    avalancheFuji,
+    // ─── Fantom / Sonic ───
+    fantom,
+    fantomTestnet,
+    sonic,
+    sonicTestnet,
+    // ─── Other L1s ───
+    celo,
+    celoAlfajores,
+    gnosis,
+    gnosisChiado,
+    cronos,
+    cronosTestnet,
+    aurora,
+    auroraTestnet,
+    moonbeam,
+    moonriver,
+    moonbaseAlpha,
+    metis,
+    harmonyOne,
+    klaytn,
+    klaytnBaobab,
+    flare,
+    flareTestnet,
+    canto,
+    kava,
+    kavaTestnet,
+    coreDao,
+    telos,
+    telosTestnet,
+    palm,
+    palmTestnet,
+    fuse,
+    fuseSparknet,
+    rootstock,
+    rootstockTestnet,
+    iotex,
+    iotexTestnet,
+    filecoin,
+    filecoinCalibration,
+    berachain,
+    berachainTestnetbArtio,
+    sei,
+    seiTestnet,
+    degen,
+    apeChain,
+    worldchain,
+    worldchainSepolia,
+  ],
   ssr: true,
   wallets: [
     {
       groupName: "Popular",
       wallets: [
         metaMaskWallet,
-        metaMaskMobileQRWallet,
+        coinbaseWallet,
         walletConnectWallet,
         rainbowWallet,
-        coinbaseWallet,
+        trustWallet,
+        phantomWallet,
+        okxWallet,
+        rabbyWallet,
+        binanceWallet,
+        krakenWallet,
+        uniswapWallet,
+        ledgerWallet,
+        safeWallet,
+        braveWallet,
+        argentWallet,
+        zerionWallet,
+      ],
+    },
+    {
+      groupName: "More Wallets",
+      wallets: [
+        bitgetWallet,
+        bybitWallet,
+        coin98Wallet,
+        coreWallet,
+        foxWallet,
+        frontierWallet,
+        gateWallet,
+        imTokenWallet,
+        magicEdenWallet,
+        mewWallet,
+        oktoWallet,
+        omniWallet,
+        oneInchWallet,
+        oneKeyWallet,
+        safepalWallet,
+        tokenPocketWallet,
+        xPortalWallet,
+        backpackWallet,
+        bestWallet,
+        bifrostWallet,
+        bloomWallet,
+        compassWallet,
+        enkryptWallet,
+        kaiaWallet,
+        roninWallet,
+        valoraWallet,
+      ],
+    },
+    {
+      groupName: "Other",
+      wallets: [
+        bitskiWallet,
+        bitverseWallet,
+        clvWallet,
+        ctrlWallet,
+        dawnWallet,
+        frameWallet,
+        injectedWallet,
+        kresusWallet,
+        nestWallet,
+        ramperWallet,
+        safeheronWallet,
+        subWallet,
+        tahoWallet,
+        talismanWallet,
+        tokenaryWallet,
+        wigwamWallet,
+        zealWallet,
+        zilPayWallet,
       ],
     },
   ],

@@ -1,37 +1,54 @@
 @import "tailwindcss";
 
 /* ========================================
-   NEON SYNTHESIS DESIGN SYSTEM
+   AUREUM ELITE DESIGN SYSTEM
+   Luxury Black & Gold Fintech Theme
    ======================================== */
 
 :root {
-  --bg-primary: #0C0C0C;
-  --bg-secondary: #141419;
-  --bg-card: #1A1A24;
-  --bg-card-hover: #222233;
-  --bg-elevated: #1E1E2E;
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #111111;
+  --bg-card: #1A1A1A;
+  --bg-card-hover: #1E1E1E;
+  --bg-elevated: #171717;
 
-  --accent-1: #6366F1;  /* Indigo */
-  --accent-2: #22D3EE;  /* Cyan */
-  --accent-3: #D946EF;  /* Fuchsia */
+  --gold: #D4AF37;
+  --gold-light: #E8C95A;
+  --gold-muted: #8B7327;
+  --gold-dim: rgba(212, 175, 55, 0.15);
 
-  --text-primary: #FFFFFF;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-primary: #F5F0E8;
+  --text-secondary: #9A8F7A;
+  --text-muted: #5C5446;
 
-  --positive: #10B981;
-  --negative: #EF4444;
-  --warning: #F59E0B;
+  --positive: #4CAF76;
+  --negative: #C45C5C;
+  --warning: #D4AF37;
 
-  --border-color: rgba(255, 255, 255, 0.06);
-  --border-glow: rgba(99, 102, 241, 0.3);
+  --border-color: rgba(212, 175, 55, 0.08);
+  --border-glow: rgba(212, 175, 55, 0.2);
 
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 20px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
 
   --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ========================================
+   GRAIN TEXTURE OVERLAY
+   ======================================== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
 }
 
 /* ========================================
@@ -57,7 +74,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Scrollbar */
+/* Gold Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -65,109 +82,242 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(212, 175, 55, 0.15);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(212, 175, 55, 0.3);
 }
 
 /* ========================================
-   CONNECT SCREEN
+   ANIMATION KEYFRAMES
+   ======================================== */
+
+@keyframes aureum-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aureum-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes aureum-pulse-gold {
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.15); }
+  50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.3); }
+}
+
+@keyframes aureum-grid-drift {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.4); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes gold-line-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* ========================================
+   CONNECT SCREEN — SPLIT PANEL LUXURY
    ======================================== */
 
 .connect-screen {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   background: var(--bg-primary);
   position: relative;
   overflow: hidden;
 }
 
+/* Animated background grid (very subtle) */
+.connect-screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: aureum-grid-drift 30s linear infinite;
+  pointer-events: none;
+}
+
 .connect-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 48px 40px;
-  background: rgba(26, 26, 36, 0.7);
-  backdrop-filter: blur(24px);
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border-color);
-  max-width: 440px;
-  width: 90%;
 }
 
 .connect-glow {
   position: absolute;
-  top: -100px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
 .connect-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
+}
+
+/* Left branding panel */
+.connect-brand-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  position: relative;
+}
+
+.connect-brand-panel::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  bottom: 15%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--gold), transparent);
+}
+
+.aureum-wordmark {
+  font-size: 14px;
+  letter-spacing: 8px;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+
+.connect-headline {
+  font-size: 44px;
+  font-weight: 200;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  max-width: 480px;
+}
+
+.connect-headline .gold {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.connect-tagline {
+  margin-top: 32px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 380px;
+  letter-spacing: 0.2px;
+}
+
+/* Right wallet panel */
+.connect-wallet-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.connect-wallet-card {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
 .connect-icon-wrapper {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+  background: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 24px;
-  font-size: 32px;
-  box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 30px rgba(99, 102, 241, 0.3); }
-  50% { box-shadow: 0 0 50px rgba(99, 102, 241, 0.5); }
+  margin: 0 auto 32px;
+  font-size: 28px;
+  animation: aureum-pulse-gold 3s ease-in-out infinite;
 }
 
 .connect-icon {
-  font-size: 32px;
+  font-size: 28px;
+  filter: brightness(0.2);
 }
 
 .connect-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  letter-spacing: -0.5px;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-primary);
 }
 
 .text-accent {
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--gold);
+  font-weight: 500;
 }
 
 .connect-subtitle {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 32px;
+  line-height: 1.7;
+  margin-bottom: 40px;
 }
 
 .connect-button-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .connect-features {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -175,16 +325,38 @@ body {
 .connect-feature {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-size: 12px;
   color: var(--text-secondary);
+  letter-spacing: 0.5px;
 }
 
 .feature-icon {
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--gold);
 }
 
-/* Particles */
+.connect-security-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 32px;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.security-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: blink 2s ease-in-out infinite;
+}
+
+/* Particles — gold themed */
 .connect-particles {
   position: absolute;
   inset: 0;
@@ -194,26 +366,22 @@ body {
 
 .particle {
   position: absolute;
-  width: 3px;
-  height: 3px;
-  background: var(--accent-1);
+  width: 2px;
+  height: 2px;
+  background: var(--gold);
   border-radius: 50%;
-  opacity: 0.3;
+  opacity: 0.4;
   animation: float linear infinite;
 }
 
-@keyframes float {
-  0% { transform: translateY(0) scale(1); opacity: 0; }
-  10% { opacity: 0.4; }
-  90% { opacity: 0.4; }
-  100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+.particle:nth-child(even) {
+  background: var(--gold-light);
+  width: 3px;
+  height: 3px;
 }
 
-.particle:nth-child(even) {
-  background: var(--accent-2);
-}
 .particle:nth-child(3n) {
-  background: var(--accent-3);
+  background: var(--gold-muted);
 }
 
 /* ========================================
@@ -224,6 +392,7 @@ body {
   display: flex;
   height: 100vh;
   background: var(--bg-primary);
+  animation: aureum-fade-up 0.5s ease-out;
 }
 
 .dashboard-main {
@@ -265,7 +434,7 @@ body {
 }
 
 /* ========================================
-   SIDEBAR
+   SIDEBAR — Elegant Vertical Nav
    ======================================== */
 
 .sidebar {
@@ -287,11 +456,14 @@ body {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+  background: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0A0A0A;
+  letter-spacing: 1px;
 }
 
 .sidebar-nav {
@@ -307,7 +479,7 @@ body {
   border-radius: var(--radius-md);
   border: none;
   background: transparent;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -329,14 +501,13 @@ body {
 }
 
 .sidebar-nav-item:hover {
-  background: rgba(99, 102, 241, 0.1);
+  background: var(--gold-dim);
   color: var(--text-primary);
 }
 
 .sidebar-nav-item.active {
-  background: rgba(99, 102, 241, 0.15);
-  color: var(--accent-1);
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+  background: var(--gold-dim);
+  color: var(--gold);
 }
 
 .sidebar-nav-item.active::before {
@@ -347,7 +518,7 @@ body {
   transform: translateY(-50%);
   width: 3px;
   height: 20px;
-  background: var(--accent-1);
+  background: var(--gold);
   border-radius: 2px;
 }
 
@@ -355,8 +526,22 @@ body {
   margin-top: auto;
 }
 
+.sidebar-monogram {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gold-muted);
+  letter-spacing: 2px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: var(--radius-sm);
+}
+
 /* ========================================
-   HEADER
+   HEADER — Minimal Gold
    ======================================== */
 
 .header {
@@ -365,7 +550,7 @@ body {
   justify-content: space-between;
   padding: 16px 24px;
   border-bottom: 1px solid var(--border-color);
-  background: rgba(20, 20, 25, 0.5);
+  background: rgba(17, 17, 17, 0.6);
   backdrop-filter: blur(12px);
   flex-shrink: 0;
 }
@@ -377,26 +562,25 @@ body {
 }
 
 .header-title {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.3px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .header-title-accent {
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--gold);
+  font-weight: 500;
 }
 
 .header-badge {
-  font-size: 10px;
+  font-size: 9px;
   padding: 2px 8px;
-  border-radius: 100px;
-  background: rgba(99, 102, 241, 0.15);
-  color: var(--accent-1);
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  border-radius: 2px;
+  background: var(--gold-dim);
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
@@ -411,9 +595,9 @@ body {
   align-items: center;
   gap: 6px;
   padding: 6px 12px;
-  border-radius: 100px;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 2px;
+  background: rgba(76, 175, 118, 0.08);
+  border: 1px solid rgba(76, 175, 118, 0.15);
 }
 
 .network-dot {
@@ -424,19 +608,15 @@ body {
   animation: blink 2s ease-in-out infinite;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
-
 .network-label {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--positive);
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 /* ========================================
-   CARDS — GLASSMORPHISM
+   CARDS — Matte Black + Gold Accents
    ======================================== */
 
 .portfolio-summary,
@@ -447,30 +627,36 @@ body {
 .strategy-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   padding: 24px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  animation: aureum-fade-up 0.5s ease-out backwards;
 }
 
 .portfolio-summary:hover,
 .asset-table-card:hover,
 .allocation-chart-card:hover {
   border-color: var(--border-glow);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.05);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.03);
 }
 
 .card-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 2px;
   margin-bottom: 16px;
 }
 
 /* ========================================
-   PORTFOLIO SUMMARY
+   PORTFOLIO SUMMARY — Vault Style
    ======================================== */
+
+.portfolio-summary {
+  border-top: 2px solid var(--gold);
+  animation-delay: 0.1s;
+}
 
 .portfolio-summary-header {
   display: flex;
@@ -480,29 +666,31 @@ body {
 }
 
 .portfolio-summary-label {
-  font-size: 13px;
-  color: var(--text-secondary);
+  font-size: 11px;
+  color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-weight: 600;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .portfolio-summary-badge {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
-  color: var(--positive);
+  font-size: 10px;
+  color: var(--gold);
   padding: 3px 10px;
-  border-radius: 100px;
-  background: rgba(16, 185, 129, 0.1);
+  border-radius: 2px;
+  background: var(--gold-dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .pulse-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--positive);
+  background: var(--gold);
   animation: blink 1.5s ease-in-out infinite;
 }
 
@@ -515,18 +703,15 @@ body {
 
 .currency-symbol {
   font-size: 24px;
-  color: var(--text-secondary);
-  font-weight: 500;
+  color: var(--gold-muted);
+  font-weight: 300;
 }
 
 .value-digits {
   font-size: 42px;
-  font-weight: 700;
-  letter-spacing: -1.5px;
-  background: linear-gradient(180deg, #fff 40%, rgba(255,255,255,0.6));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 200;
+  letter-spacing: -1px;
+  color: var(--gold);
 }
 
 .portfolio-summary-change {
@@ -537,18 +722,23 @@ body {
 
 .change-positive {
   color: var(--positive);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
 }
 
 .change-period {
   color: var(--text-muted);
   font-size: 12px;
+  letter-spacing: 0.5px;
 }
 
 /* ========================================
-   ASSET TABLE
+   ASSET TABLE — Gold Accented Rows
    ======================================== */
+
+.asset-table-card {
+  animation-delay: 0.2s;
+}
 
 .asset-table-wrapper {
   overflow-x: auto;
@@ -561,28 +751,40 @@ body {
 }
 
 .asset-table thead th {
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 500;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.5px;
   padding: 0 16px 12px;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
 
 .asset-row {
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 .asset-row:hover {
-  background: rgba(99, 102, 241, 0.04);
+  background: rgba(212, 175, 55, 0.03);
+}
+
+.asset-row:hover td:first-child::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gold);
 }
 
 .asset-row td {
   padding: 14px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.04);
   vertical-align: middle;
+  position: relative;
 }
 
 .asset-name {
@@ -595,7 +797,8 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--bg-elevated);
+  background: var(--gold-dim);
+  border: 1px solid rgba(212, 175, 55, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,31 +806,34 @@ body {
 }
 
 .asset-symbol {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
 }
 
 .asset-price,
 .asset-balance,
 .asset-value {
-  font-weight: 500;
+  font-weight: 400;
   font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
 }
 
 .change-badge {
   font-size: 12px;
   padding: 3px 8px;
-  border-radius: 6px;
-  font-weight: 600;
+  border-radius: 2px;
+  font-weight: 500;
 }
 
 .change-badge.positive {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(76, 175, 118, 0.1);
   color: var(--positive);
 }
 
 .change-badge.negative {
-  background: rgba(239, 68, 68, 0.1);
+  background: rgba(196, 92, 92, 0.1);
   color: var(--negative);
 }
 
@@ -639,23 +845,23 @@ body {
 
 .allocation-bar {
   width: 60px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 2px;
+  height: 3px;
+  background: rgba(212, 175, 55, 0.06);
+  border-radius: 1px;
   overflow: hidden;
 }
 
 .allocation-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold-muted), var(--gold));
+  border-radius: 1px;
   transition: width 0.6s ease;
 }
 
 .allocation-pct {
   font-size: 12px;
   color: var(--text-secondary);
-  font-weight: 500;
+  font-weight: 400;
   font-variant-numeric: tabular-nums;
 }
 
@@ -672,8 +878,12 @@ body {
 }
 
 /* ========================================
-   ALLOCATION CHART (DONUT)
+   ALLOCATION CHART — Gold/Champagne Donut
    ======================================== */
+
+.allocation-chart-card {
+  animation-delay: 0.3s;
+}
 
 .allocation-chart-container {
   display: flex;
@@ -702,14 +912,15 @@ body {
 
 .donut-label {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 300;
+  color: var(--gold);
 }
 
 .donut-sub {
-  font-size: 10px;
+  font-size: 8px;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
 }
 
 .allocation-legend {
@@ -728,13 +939,14 @@ body {
 .legend-dot {
   width: 8px;
   height: 8px;
-  border-radius: 2px;
+  border-radius: 1px;
   flex-shrink: 0;
 }
 
 .legend-symbol {
-  font-weight: 600;
+  font-weight: 500;
   min-width: 48px;
+  color: var(--text-primary);
 }
 
 .legend-pct {
@@ -743,8 +955,12 @@ body {
 }
 
 /* ========================================
-   RISK GAUGE
+   RISK GAUGE — Gold SVG Arc
    ======================================== */
+
+.risk-gauge-card {
+  animation-delay: 0.15s;
+}
 
 .risk-gauge-container {
   display: flex;
@@ -764,16 +980,16 @@ body {
 .risk-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 9px;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   padding: 0 8px;
   margin-top: -4px;
 }
 
 /* ========================================
-   AI COPILOT PANEL
+   AI COPILOT PANEL — Neural Hub
    ======================================== */
 
 .ai-copilot-panel {
@@ -787,21 +1003,30 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .ai-copilot-title {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
 .ai-icon {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* Sentiment Card */
+.sentiment-card {
+  border-left: 2px solid var(--gold);
+}
+
 .sentiment-indicator {
   display: flex;
   align-items: center;
@@ -813,8 +1038,9 @@ body {
 }
 
 .sentiment-text {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .sentiment-text.bullish {
@@ -825,17 +1051,18 @@ body {
   font-size: 12px;
   color: var(--text-muted);
   margin-top: 6px;
+  letter-spacing: 0.3px;
 }
 
-/* Analyze Button */
+/* Analyze Button — Gold CTA */
 .btn-analyze {
   width: 100%;
   padding: 14px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   border: none;
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
-  color: white;
-  font-size: 15px;
+  background: var(--gold);
+  color: #0A0A0A;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -845,13 +1072,15 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .btn-analyze::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.2), transparent);
   transform: translateX(-100%);
   transition: transform 0.5s ease;
 }
@@ -861,7 +1090,8 @@ body {
 }
 
 .btn-analyze:hover {
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+  background: var(--gold-light);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
   transform: translateY(-1px);
 }
 
@@ -873,12 +1103,12 @@ body {
 }
 
 .btn-analyze-icon {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .ai-error-text {
   font-size: 12px;
-  color: var(--warning);
+  color: var(--negative);
   text-align: center;
 }
 
@@ -887,6 +1117,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
 }
 
 .strategies-list {
@@ -896,11 +1128,12 @@ body {
 }
 
 /* ========================================
-   STRATEGY CARD
+   STRATEGY CARD — Luxury Matte
    ======================================== */
 
 .strategy-card {
-  border-left: 3px solid var(--accent-1);
+  border-left: none;
+  border-top: 2px solid var(--gold);
   padding: 16px 16px 12px;
 }
 
@@ -914,7 +1147,8 @@ body {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
-  background: var(--bg-elevated);
+  background: var(--gold-dim);
+  border: 1px solid rgba(212, 175, 55, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -929,12 +1163,14 @@ body {
 
 .strategy-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 .strategy-protocol {
-  font-size: 12px;
-  color: var(--text-muted);
+  font-size: 11px;
+  color: var(--gold-muted);
+  letter-spacing: 0.5px;
 }
 
 .strategy-meta {
@@ -947,17 +1183,17 @@ body {
 
 .strategy-apy {
   font-size: 14px;
-  font-weight: 700;
-  color: var(--accent-2);
+  font-weight: 600;
+  color: var(--gold);
 }
 
 .strategy-risk-badge {
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 9px;
+  font-weight: 500;
   padding: 2px 8px;
-  border-radius: 100px;
+  border-radius: 2px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .strategy-details-toggle {
@@ -968,10 +1204,11 @@ body {
   cursor: pointer;
   padding: 8px 0 4px;
   transition: color 0.2s;
+  letter-spacing: 0.5px;
 }
 
 .strategy-details-toggle:hover {
-  color: var(--text-secondary);
+  color: var(--gold);
 }
 
 .strategy-reasoning {
@@ -993,29 +1230,32 @@ body {
 }
 
 /* ========================================
-   BUTTONS — EXECUTE
+   BUTTONS — Gold Execute
    ======================================== */
 
 .btn-execute {
   width: 100%;
   padding: 10px 16px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--accent-1);
-  background: rgba(99, 102, 241, 0.1);
-  color: var(--accent-1);
-  font-size: 13px;
-  font-weight: 600;
+  border: 1px solid var(--gold);
+  background: var(--gold-dim);
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   transition: all 0.2s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .btn-execute:hover {
-  background: rgba(99, 102, 241, 0.2);
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+  background: var(--gold);
+  color: #0A0A0A;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
 .btn-execute.btn-loading {
@@ -1041,10 +1281,6 @@ body {
   animation: spin 0.6s linear infinite;
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
 .tx-success,
 .tx-error {
   display: flex;
@@ -1062,7 +1298,7 @@ body {
 }
 
 .tx-link {
-  color: var(--accent-2);
+  color: var(--gold);
   text-decoration: none;
   font-size: 12px;
 }
@@ -1081,21 +1317,23 @@ body {
   cursor: pointer;
   transition: all 0.2s;
   width: fit-content;
+  letter-spacing: 0.5px;
 }
 
 .btn-reset:hover {
-  border-color: var(--text-secondary);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 /* ========================================
-   SKELETONS
+   SKELETONS — Gold Shimmer
    ======================================== */
 
 .skeleton-text {
-  background: linear-gradient(90deg, var(--bg-elevated) 25%, rgba(99, 102, 241, 0.08) 50%, var(--bg-elevated) 75%);
+  background: linear-gradient(90deg, var(--bg-elevated) 25%, rgba(212, 175, 55, 0.06) 50%, var(--bg-elevated) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s ease infinite;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .skeleton-sm { width: 60px; height: 14px; }
@@ -1106,12 +1344,23 @@ body {
   display: flex;
   gap: 20px;
   padding: 14px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.04);
 }
 
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+/* ========================================
+   RAINBOWKIT OVERRIDES — Gold Theme
+   ======================================== */
+
+[data-rk] {
+  --rk-colors-accentColor: #D4AF37 !important;
+  --rk-colors-accentColorForeground: #0A0A0A !important;
+  --rk-colors-modalBackground: #1A1A1A !important;
+  --rk-colors-modalBorder: rgba(212, 175, 55, 0.1) !important;
+  --rk-colors-profileAction: #111111 !important;
+  --rk-colors-profileActionHover: #1A1A1A !important;
+  --rk-colors-connectButtonBackground: var(--gold) !important;
+  --rk-colors-connectButtonInnerBackground: var(--gold-dim) !important;
+  --rk-colors-connectButtonText: #0A0A0A !important;
 }
 
 /* ========================================
@@ -1121,6 +1370,13 @@ body {
 @media (max-width: 1024px) {
   .dashboard-right {
     width: 320px;
+  }
+  .connect-headline {
+    font-size: 32px;
+  }
+  .connect-brand-panel,
+  .connect-wallet-panel {
+    padding: 40px;
   }
 }
 
@@ -1154,5 +1410,22 @@ body {
   .allocation-chart-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .connect-content {
+    flex-direction: column;
+  }
+
+  .connect-brand-panel::after {
+    display: none;
+  }
+
+  .connect-brand-panel,
+  .connect-wallet-panel {
+    padding: 32px;
+  }
+
+  .connect-headline {
+    font-size: 28px;
   }
 }
