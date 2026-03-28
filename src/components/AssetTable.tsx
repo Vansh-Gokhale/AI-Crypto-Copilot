@@ -1,6 +1,7 @@
 "use client";
 
 import type { TokenBalance } from "@/hooks/usePortfolio";
+import { securityCheck } from "@/utils/securityCheck";
 
 interface AssetTableProps {
   tokens: TokenBalance[];
@@ -78,6 +79,7 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
             <tr>
               <th>Asset</th>
               <th>Price</th>
+              <th>Security</th>
               <th>24h</th>
               <th>Balance</th>
               <th>Value</th>
@@ -85,41 +87,52 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
             </tr>
           </thead>
           <tbody>
-            {tokens.map((token) => (
-              <tr key={token.symbol} className="asset-row">
-                <td>
-                  <div className="asset-name">
-                    <span className="asset-icon">{token.icon}</span>
-                    <div>
-                      <span className="asset-symbol">{token.symbol}</span>
+            {tokens.map((token) => {
+              const security = securityCheck(token);
+              return (
+                <tr key={token.symbol} className="asset-row">
+                  <td>
+                    <div className="asset-name">
+                      <span className="asset-icon">{token.icon}</span>
+                      <div>
+                        <span className="asset-symbol">{token.symbol}</span>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td className="asset-price">
-                  ${token.usdPrice.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                </td>
-                <td>
-                  <span className={`change-badge ${token.change24h >= 0 ? "positive" : "negative"}`}>
-                    {token.change24h >= 0 ? "▲" : "▼"} {Math.abs(token.change24h).toFixed(2)}%
-                  </span>
-                </td>
-                <td className="asset-balance">{token.balance}</td>
-                <td className="asset-value">
-                  ${token.usdValue.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                </td>
-                <td>
-                  <div className="allocation-cell">
-                    <div className="allocation-bar">
-                      <div
-                        className="allocation-fill"
-                        style={{ width: `${token.allocation}%` }}
-                      ></div>
+                  </td>
+                  <td className="asset-price">
+                    ${token.usdPrice.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  </td>
+                  <td>
+                    <div className="security-indicator" title={security.warnings.join("\n")}>
+                        <span className={`security-shield shield-${security.riskLevel.toLowerCase()}`}>🛡️</span>
+                        <span className={`security-level level-${security.riskLevel.toLowerCase()}`}>
+                            {security.riskLevel}
+                        </span>
                     </div>
-                    <span className="allocation-pct">{token.allocation.toFixed(1)}%</span>
-                  </div>
-                </td>
-              </tr>
-            ))}
+                  </td>
+                  <td>
+                    <span className={`change-badge ${token.change24h >= 0 ? "positive" : "negative"}`}>
+                      {token.change24h >= 0 ? "▲" : "▼"} {Math.abs(token.change24h).toFixed(2)}%
+                    </span>
+                  </td>
+                  <td className="asset-balance">{token.balance}</td>
+                  <td className="asset-value">
+                    ${token.usdValue.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  </td>
+                  <td>
+                    <div className="allocation-cell">
+                      <div className="allocation-bar">
+                        <div
+                          className="allocation-fill"
+                          style={{ width: `${token.allocation}%` }}
+                        ></div>
+                      </div>
+                      <span className="allocation-pct">{token.allocation.toFixed(1)}%</span>
+                    </div>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

@@ -20,7 +20,7 @@ export interface AIStrategyResult {
   strategies: AIStrategy[];
   isLoading: boolean;
   error: string | null;
-  analyze: (tokens: TokenBalance[], totalValue: number) => Promise<void>;
+  analyze: (tokens: TokenBalance[], totalValue: number, goal?: string) => Promise<void>;
 }
 
 export function useAIStrategy(): AIStrategyResult {
@@ -29,7 +29,7 @@ export function useAIStrategy(): AIStrategyResult {
   const [error, setError] = useState<string | null>(null);
 
   const analyze = useCallback(
-    async (tokens: TokenBalance[], totalValue: number) => {
+    async (tokens: TokenBalance[], totalValue: number, goal?: string) => {
       setIsLoading(true);
       setError(null);
       setStrategies([]);
@@ -37,7 +37,6 @@ export function useAIStrategy(): AIStrategyResult {
       const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
 
       if (!apiKey) {
-        // Use mock strategies if no API key
         setStrategies(generateMockStrategies(tokens));
         setIsLoading(false);
         return;
@@ -54,7 +53,10 @@ export function useAIStrategy(): AIStrategyResult {
           )
           .join("\n");
 
-        const prompt = `You are a DeFi strategy advisor. Analyze this crypto portfolio and suggest 2-3 actionable DeFi strategies.
+        const goalContext = goal ? `INVESTMENT GOAL: "${goal}". Provide a strategic roadmap action to achieve this.` : "";
+
+        const prompt = `You are a DeFi strategy advisor.
+${goalContext}
 
 Portfolio (Total Value: $${totalValue.toFixed(2)}):
 ${portfolioSummary}
@@ -63,21 +65,20 @@ Rules:
 - Only suggest proven, safe protocols (Aave, Lido, Compound, Uniswap)
 - Focus on yield generation for idle stablecoins
 - Consider staking for ETH holdings
-- Keep suggestions simple and actionable
 - Be realistic with APY estimates
 
-Return ONLY a JSON array (no markdown, no code blocks) with objects containing:
+Return ONLY a JSON array with objects containing:
 {
   "action": "Lend" | "Stake" | "Swap" | "Provide Liquidity",
-  "protocol": "protocol name",
-  "asset": "token symbol",
-  "amount": "suggested amount with token",
-  "estimatedApy": "X.X%",
+  "protocol": "string",
+  "asset": "string",
+  "amount": "string",
+  "estimatedApy": "string",
   "risk": "Low" | "Medium" | "High",
-  "reasoning": "brief explanation",
-  "confidenceScore": 0-100,
-  "riskReasoning": "detailed risk assessment"
-} padding it as a single line JSON string for each object.`;
+  "reasoning": "string",
+  "confidenceScore": number (0-100),
+  "riskReasoning": "string"
+}`;
 
         const result = await model.generateContent(prompt);
         const text = result.response.text();

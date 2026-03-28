@@ -70,10 +70,16 @@ Aureum Elite provides:
 | Feature | Aureum Elite | Typical DeFi Dashboard | Advantage |
 |---------|-------------|----------------------|-----------|
 | **AI Strategy Engine** | ✅ Gemini 2.0 Flash | ❌ Manual research | Automated, personalized recommendations |
+| **OrbitX Spend Loop** | ✅ Spend DeFi yield directly | ❌ Manual off-ramping | Daily utility for your crypto earnings |
+| **Whale Tracking** | ✅ Smart Money Monitoring | ❌ Retail-only view | Follow the legendary institutional flows |
+| **Security Scanner** | ✅ Token Risk Assessment | ❌ No safety checks | Trade with confidence with AI risk shields |
+| **AI Roadmaps** | ✅ Goal-aligned strategies | ❌ Generic advice | Personalized financial pathing |
 | **AI Auto Mode** | ✅ One-click automation | ❌ Manual execution | Hands-free DeFi management |
 | **Explainable AI** | ✅ Confidence & Reasoning | ❌ Black-box output | Transparent AI decision making |
 | **One-Click Aave Deposit** | ✅ Full approval + supply flow | ❌ Navigate to app.aave.com | Save 3-5 clicks, reduce errors |
 | **Portfolio History** | ✅ Snapshots & Charts | ❌ Current view only | Performance tracking over time |
+| **Portfolio Heatmap** | ✅ Visual grid analysis | ❌ Table-only view | Quick visual sentiment analysis |
+| **Activity Feed** | ✅ On-chain history feed | ❌ Scan-only search | Real-time transaction visibility |
 | **Risk Scoring** | ✅ Weighted portfolio model | ❌ None | Data-driven risk assessment |
 | **Smart Alerts** | ✅ Real-time Notifications | ❌ Manual monitoring | Never miss a price/APY change |
 | **What-If Simulator** | ✅ Impact Projection | ❌ Guesswork | Data-driven decision support |
@@ -158,24 +164,32 @@ v1/
 │   │   └── globals.css           # Global styles (Tailwind)
 │   │
 │   ├── components/
-│   │   ├── Header.tsx            # Nav + wallet + Smart Alerts
-│   │   ├── PortfolioSummary.tsx  # USD value + Rebalance button
-│   │   ├── AssetTable.tsx        # Token list + CSV Export
-│   │   ├── AllocationChart.tsx   # Donut chart visualization
-│   │   ├── RiskGauge.tsx         # Risk score gauge
-│   │   ├── StrategyCard.tsx      # AI strategy + Explainable AI
-│   │   ├── AICopilot.tsx         # Chat interface + Neural Hub
-│   │   ├── Sidebar.tsx           # Navigation sidebar
-│   │   ├── PortfolioHistory.tsx  # Historical performance chart
-│   │   └── Simulator.tsx         # What-If scenario projection
+│   │   ├── Header.tsx            # Smart Alerts + Global Switch
+│   │   ├── PortfolioSummary.tsx  # USD value + Rebalance
+│   │   ├── AssetTable.tsx        # Security Scanner Shields
+│   │   ├── AllocationChart.tsx   # Donut visualization
+│   │   ├── RiskGauge.tsx         # Portfolio risk weighting
+│   │   ├── StrategyCard.tsx      # Explainable AI Logic
+│   │   ├── AICopilot.tsx         # Chat + Neural Strategy Hub
+│   │   ├── Sidebar.tsx           # Dashboard Navigation
+│   │   ├── PortfolioHistory.tsx  # Area Charts for growth
+│   │   ├── Simulator.tsx         # Scenario Price Projection
+│   │   ├── WhaleActivity.tsx     # Smart Money Watcher
+│   │   ├── ActivityFeed.tsx      # On-chain History
+│   │   ├── Heatmap.tsx           # Performance Heat Grid
+│   │   ├── Goals.tsx             # Goal-based roadmaps
+│   │   └── SpendPanel.tsx        # OrbitX Spend Loop
 │   │
 │   ├── hooks/
-│   │   ├── usePortfolio.ts       # Portfolio + Demo Mode
-│   │   ├── useAIStrategy.ts      # Gemini AI strategy engine
-│   │   ├── useAaveDeposit.ts     # Aave supply transactions
-│   │   ├── useUIState.tsx        # Global settings (Auto/Demo)
-│   │   ├── useAlerts.ts          # Smart notification logic
-│   │   └── useAutoExecutor.ts    # AI Auto Mode execution
+│   │   ├── usePortfolio.ts       # Main data aggregator
+│   │   ├── useAIStrategy.ts      # Gemini Intelligence Engine
+│   │   ├── useAaveDeposit.ts     # Aave Execution layer
+│   │   ├── useUIState.tsx        # Global settings management
+│   │   ├── useAlerts.ts          # Real-time condition monitors
+│   │   ├── useAutoExecutor.ts    # AI Automation logic
+│   │   ├── useTransactions.ts    # Activity fetcher
+│   │   ├── useWhaleTracker.ts    # Smart money intelligence
+│   │   └── useOrbitX.ts          # Spend loop integration
 │   │
 │   ├── config/
 │   │   ├── contracts.ts          # Token addresses + ABIs
@@ -436,6 +450,27 @@ Cinematic design system:
 - **Confidence Scoring**: Real-time reliability score for every AI suggestion.
 - **Deep Reasoning**: Detailed logic behind every protocol recommendation.
 - **Conversational AI**: Chat directly with your portfolio agent for insights.
+
+### 13. DeFi Earn → Spend Loop (Powered by OrbitX)
+- **Direct Yield Utility**: Instantly spend your generated earnings without off-ramping.
+- **Virtual Credit Cards**: Integrated virtual card creation and management.
+- **Real-Time Settlement**: Automated yield balance synchronization.
+
+### 14. Smart Money Intelligence (Whale Tracker)
+- **Whale Activity**: Track legendary smart money wallets in real-time.
+- **Trade Insights**: Follow institutional-grade execution flows.
+
+### 15. On-Chain Security Scanner
+- **Risk Shields**: Automatic scanning for scam risk, liquidity gaps, and volatility.
+- **Alert Badges**: Visual indicators directly in the asset table for trade safety.
+
+### 16. Visual Performance Matrix
+- **Heatmap Grid**: Fast visual analysis of portfolio winners and losers.
+- **Dynamic Sizing**: View performance distribution at a glance.
+
+### 17. Goal-Based AI Roadmaps
+- **Financial Ambitions**: Define your goals and get tailor-made roadmap strategies.
+- **Contextual Intelligence**: AI recommendations align with your long-term roadmap.
 
 ---
 

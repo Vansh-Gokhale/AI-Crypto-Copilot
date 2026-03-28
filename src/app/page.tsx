@@ -2,6 +2,7 @@
 
 import { useAccount } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useState } from "react";
 import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
 import { PortfolioSummary } from "@/components/PortfolioSummary";
@@ -38,6 +39,11 @@ import { useUIState } from "@/hooks/useUIState";
 
 import { PortfolioHistory } from "@/components/PortfolioHistory";
 import { Simulator } from "@/components/Simulator";
+import { WhaleActivity } from "@/components/WhaleActivity";
+import { ActivityFeed } from "@/components/ActivityFeed";
+import { Goals } from "@/components/Goals";
+import { Heatmap } from "@/components/Heatmap";
+import { SpendPanel } from "@/components/SpendPanel";
 
 export default function Home() {
   const { isConnected: isWalletConnected } = useAccount();
@@ -45,9 +51,10 @@ export default function Home() {
   const isConnected = isWalletConnected || isDemoMode;
   const portfolio = usePortfolio();
   const ai = useAIStrategy();
+  const [activeGoal, setActiveGoal] = useState("");
 
   const handleAnalyze = () => {
-    ai.analyze(portfolio.tokens, portfolio.totalValueUsd);
+    ai.analyze(portfolio.tokens, portfolio.totalValueUsd, activeGoal);
   };
 
   if (!isConnected) {
@@ -145,6 +152,8 @@ export default function Home() {
                   <Simulator totalValue={portfolio.totalValueUsd} />
               </div>
             </div>
+            <Heatmap tokens={portfolio.tokens} />
+            <Goals goal={activeGoal} setGoal={setActiveGoal} />
             <AssetTable
               tokens={portfolio.tokens}
               isLoading={portfolio.isLoading}
@@ -158,6 +167,9 @@ export default function Home() {
               aiError={ai.error}
               onAnalyze={handleAnalyze}
             />
+            <SpendPanel totalValueUsd={portfolio.totalValueUsd} />
+            <WhaleActivity />
+            <ActivityFeed />
           </div>
         </div>
       </div>
