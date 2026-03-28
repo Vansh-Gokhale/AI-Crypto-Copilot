@@ -27,24 +27,35 @@ export interface PortfolioData {
   refetch: () => void;
 }
 
-// Fetch prices from CoinGecko
+// Fallback prices in case CoinGecko API is down or blocked by CORS
+const FALLBACK_PRICES: Record<string, { usd: number; usd_24h_change: number }> = {
+  ethereum: { usd: 2500, usd_24h_change: 2.5 },
+  "usd-coin": { usd: 1, usd_24h_change: 0.01 },
+  dai: { usd: 1, usd_24h_change: -0.02 },
+  tether: { usd: 1, usd_24h_change: 0.01 },
+};
+
+// Fetch prices from CoinGecko with timeout and fallback
 async function fetchPrices(
   ids: string[]
 ): Promise<Record<string, { usd: number; usd_24h_change: number }>> {
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+
     const response = await fetch(
-      `https://api.coingecko.com/api/v3/simple/price?ids=${ids.join(",")}&vs_currencies=usd&include_24hr_change=true`
+      `https://api.coingecko.com/api/v3/simple/price?ids=${ids.join(",")}&vs_currencies=usd&include_24hr_change=true`,
+      { signal: controller.signal }
     );
+    clearTimeout(timeout);
+
     if (!response.ok) throw new Error("Price fetch failed");
-    return await response.json();
+    const data = await response.json();
+    // Merge with fallback so we always have complete data
+    return { ...FALLBACK_PRICES, ...data };
   } catch {
-    // Fallback prices if API is down
-    return {
-      ethereum: { usd: 2500, usd_24h_change: 2.5 },
-      "usd-coin": { usd: 1, usd_24h_change: 0.01 },
-      dai: { usd: 1, usd_24h_change: -0.02 },
-      tether: { usd: 1, usd_24h_change: 0.01 },
-    };
+    // Fallback prices if API is down or CORS-blocked
+    return FALLBACK_PRICES;
   }
 }
 
@@ -238,12 +249,6 @@ export function usePortfolio(): PortfolioData {
           }
         }
       });
-    }
-
-    // If wallet has no real balances and not in demo mode, but maybe show fallback if absolutely empty?
-    // The original logic showed fallback if portfolio.length === 0. I'll maintain that but prioritize isDemoMode.
-    if (portfolio.length === 0 && !isConnected) {
-        // This part is redundant now due to the return at the start of useEffect, but kept for safety
     }
 
     // Calculate allocations

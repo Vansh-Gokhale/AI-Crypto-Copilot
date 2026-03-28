@@ -310,7 +310,7 @@ export const config = getDefaultConfig({
     worldchain,
     worldchainSepolia,
   ],
-  ssr: true,
+  ssr: false,
   wallets: [
     {
       groupName: "Popular",

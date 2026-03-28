@@ -98,7 +98,7 @@ export const KNOWN_TOKENS = [
 ] as const;
 
 // Aureum Earnings Vault - Custom Bridge to OrbitX
-export const AUREUM_VAULT_ADDRESS = "0xc738E9B309A464646465Ab2f378077A9077A9077" as const;
+export const AUREUM_VAULT_ADDRESS = "0x1Fa01bEC9E3913aB168cD91b80Fd495d1a9478d5" as const;
 
 export const AUREUM_VAULT_ABI = [
   {

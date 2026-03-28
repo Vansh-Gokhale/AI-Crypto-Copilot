@@ -8,9 +8,7 @@ const navItems = [
   { id: "copilot", icon: "◇", label: "Neural" },
 ];
 
-export function Sidebar() {
-  const [active, setActive] = useState("dashboard");
-
+export function Sidebar({ activeTab, setActiveTab }: { activeTab: string, setActiveTab: (tab: string) => void }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -20,8 +18,8 @@ export function Sidebar() {
         {navItems.map((item) => (
           <button
             key={item.id}
-            onClick={() => setActive(item.id)}
-            className={`sidebar-nav-item ${active === item.id ? "active" : ""}`}
+            onClick={() => setActiveTab(item.id)}
+            className={`sidebar-nav-item ${activeTab === item.id ? "active" : ""}`}
             title={item.label}
           >
             <span className="sidebar-nav-icon">{item.icon}</span>

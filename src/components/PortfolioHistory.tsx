@@ -58,8 +58,8 @@ export function PortfolioHistory({ totalValue }: { totalValue: number }) {
   return (
     <div className="portfolio-history-card">
       <h3 className="card-title">Portfolio Performance</h3>
-      <div style={{ width: "100%", height: "220px", marginTop: "10px" }}>
-        <ResponsiveContainer width="100%" height="100%">
+      <div style={{ width: "100%", height: "220px", minWidth: "200px", minHeight: "200px", marginTop: "10px" }}>
+        <ResponsiveContainer width="100%" height="100%" minWidth={200} minHeight={200}>
           <AreaChart data={history}>
             <defs>
               <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
