@@ -71,6 +71,8 @@ Aureum Elite provides:
 |---------|-------------|----------------------|-----------|
 | **AI Strategy Engine** | ✅ Gemini 2.0 Flash | ❌ Manual research | Automated, personalized recommendations |
 | **OrbitX Spend Loop** | ✅ Spend DeFi yield directly | ❌ Manual off-ramping | Daily utility for your crypto earnings |
+| **Aureum Vault Contract** | ✅ Real On-Chain Spending | ❌ Centralized simulation | Full transparency and trustless execution |
+| **Hardhat Suite** | ✅ Integrated deployment | ❌ Manual setup | One-click local or testnet deployment |
 | **Whale Tracking** | ✅ Smart Money Monitoring | ❌ Retail-only view | Follow the legendary institutional flows |
 | **Security Scanner** | ✅ Token Risk Assessment | ❌ No safety checks | Trade with confidence with AI risk shields |
 | **AI Roadmaps** | ✅ Goal-aligned strategies | ❌ Generic advice | Personalized financial pathing |
@@ -164,32 +166,30 @@ v1/
 │   │   └── globals.css           # Global styles (Tailwind)
 │   │
 │   ├── components/
-│   │   ├── Header.tsx            # Smart Alerts + Global Switch
-│   │   ├── PortfolioSummary.tsx  # USD value + Rebalance
-│   │   ├── AssetTable.tsx        # Security Scanner Shields
-│   │   ├── AllocationChart.tsx   # Donut visualization
-│   │   ├── RiskGauge.tsx         # Portfolio risk weighting
-│   │   ├── StrategyCard.tsx      # Explainable AI Logic
-│   │   ├── AICopilot.tsx         # Chat + Neural Strategy Hub
-│   │   ├── Sidebar.tsx           # Dashboard Navigation
-│   │   ├── PortfolioHistory.tsx  # Area Charts for growth
-│   │   ├── Simulator.tsx         # Scenario Price Projection
-│   │   ├── WhaleActivity.tsx     # Smart Money Watcher
-│   │   ├── ActivityFeed.tsx      # On-chain History
-│   │   ├── Heatmap.tsx           # Performance Heat Grid
-│   │   ├── Goals.tsx             # Goal-based roadmaps
-│   │   └── SpendPanel.tsx        # OrbitX Spend Loop
+│   │   ├── SpendPanel.tsx        # OrbitX Spend Loop UI
+│   │   ├── AICopilot.tsx         # Chat + Neural Strategies
+│   │   ├── AssetTable.tsx        # Security Scanner List
+│   │   ├── Goals.tsx             # Goal-based roadmap generation
+│   │   ├── Heatmap.tsx           # Performance grid analysis
+│   │   ├── WhaleActivity.tsx     # Smart money activity monitor
+│   │   ├── PortfolioHistory.tsx  # Area charts for yield growth
+│   │   └── Simulator.tsx         # What-If price projections
 │   │
 │   ├── hooks/
-│   │   ├── usePortfolio.ts       # Main data aggregator
-│   │   ├── useAIStrategy.ts      # Gemini Intelligence Engine
-│   │   ├── useAaveDeposit.ts     # Aave Execution layer
-│   │   ├── useUIState.tsx        # Global settings management
-│   │   ├── useAlerts.ts          # Real-time condition monitors
-│   │   ├── useAutoExecutor.ts    # AI Automation logic
-│   │   ├── useTransactions.ts    # Activity fetcher
+│   │   ├── useOrbitX.ts          # Spend loop contract bridge
+│   │   ├── useAIStrategy.ts      # Gemini AI strategy kernel
+│   │   ├── useAaveDeposit.ts     # Aave Execution hook
 │   │   ├── useWhaleTracker.ts    # Smart money intelligence
-│   │   └── useOrbitX.ts          # Spend loop integration
+│   │   ├── useTransactions.ts    # Historical activity fetcher
+│   │   └── useAutoExecutor.ts    # Neural hub automation logic
+│   │
+│   ├── contracts/                # Hardhat Contract Suite
+│   │   └── AureumEarningsVault.sol # DeFi-to-Spend Vault
+│   │
+│   ├── scripts/                  # Hardhat Deploy Scripts
+│   │   └── deploy.js             # ESM Deployment Script
+│   │
+│   ├── hardhat.config.js         # Standard Hardhat Environment
 │   │
 │   ├── config/
 │   │   ├── contracts.ts          # Token addresses + ABIs
@@ -451,12 +451,18 @@ Cinematic design system:
 - **Deep Reasoning**: Detailed logic behind every protocol recommendation.
 - **Conversational AI**: Chat directly with your portfolio agent for insights.
 
-### 13. DeFi Earn → Spend Loop (Powered by OrbitX)
+### 13. DeFi Earn → Spend Loop & Smart Contract (OrbitX Integration)
 - **Direct Yield Utility**: Instantly spend your generated earnings without off-ramping.
-- **Virtual Credit Cards**: Integrated virtual card creation and management.
-- **Real-Time Settlement**: Automated yield balance synchronization.
+- **Aureum Vault Contract**: Secure, on-chain vault for managing spendable earnings.
+- **Virtual Credit Cards**: Integrated virtual card creation and management via OrbitX.
+- **Real-Time Settlement**: Automated on-chain balance synchronization.
 
-### 14. Smart Money Intelligence (Whale Tracker)
+### 14. Hardhat Deployment Suite
+- **Aureum Contract Suite**: Standardized environment for contract testing and deployment.
+- **Automated Scripts**: One-click deployment to localhost or Sepolia testnets.
+- **Full Architecture**: Includes `hardhat.config.js` and ESM-compatible deploy scripts.
+
+### 15. Smart Money Intelligence (Whale Tracker)
 - **Whale Activity**: Track legendary smart money wallets in real-time.
 - **Trade Insights**: Follow institutional-grade execution flows.
 

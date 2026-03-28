@@ -96,3 +96,47 @@ export const KNOWN_TOKENS = [
     coingeckoId: "tether",
   },
 ] as const;
+
+// Aureum Earnings Vault - Custom Bridge to OrbitX
+export const AUREUM_VAULT_ADDRESS = "0xc738E9B309A464646465Ab2f378077A9077A9077" as const;
+
+export const AUREUM_VAULT_ABI = [
+  {
+    inputs: [],
+    name: "depositEarnings",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function"
+  },
+  {
+    inputs: [],
+    name: "linkOrbitXCard",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function"
+  },
+  {
+    inputs: [
+      { name: "amount", type: "uint256" },
+      { name: "cardLast4", type: "string" }
+    ],
+    name: "spendViaOrbitX",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function"
+  },
+  {
+    inputs: [{ name: "user", type: "address" }],
+    name: "getSpendableEarnings",
+    outputs: [{ name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function"
+  },
+  {
+    inputs: [{ name: "account", type: "address" }],
+    name: "isLinkedToOrbitX",
+    outputs: [{ name: "", type: "bool" }],
+    stateMutability: "view",
+    type: "function"
+  }
+] as const;

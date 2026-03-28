@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { useAccount, useReadContract, useWriteContract } from "wagmi";
+import { parseEther, formatEther } from "viem";
+import { AUREUM_VAULT_ADDRESS, AUREUM_VAULT_ABI } from "@/config/contracts";
 
 export interface OrbitXState {
   isLinked: boolean;
@@ -11,6 +14,7 @@ export interface OrbitXState {
 }
 
 export function useOrbitX(totalValueUsd: number) {
+  const { address } = useAccount();
   const [state, setState] = useState<OrbitXState>({
     isLinked: false,
     cardLast4: null,
@@ -19,34 +23,58 @@ export function useOrbitX(totalValueUsd: number) {
     isLoading: false,
   });
 
+  const { data: onChainLinked } = useReadContract({
+    address: AUREUM_VAULT_ADDRESS,
+    abi: AUREUM_VAULT_ABI,
+    functionName: "isLinkedToOrbitX",
+    args: address ? [address] : undefined,
+    query: { enabled: !!address }
+  });
+
+  const { data: onChainEarnings } = useReadContract({
+    address: AUREUM_VAULT_ADDRESS,
+    abi: AUREUM_VAULT_ABI,
+    functionName: "getSpendableEarnings",
+    args: address ? [address] : undefined,
+    query: { enabled: !!address }
+  });
+
+  const { writeContractAsync } = useWriteContract();
+
   useEffect(() => {
-    // Calculate simulated yield (average 4.5% APY)
     const annualYield = totalValueUsd * 0.045;
     const monthly = annualYield / 12;
     
-    // Simulate available yield (accrued over some time)
-    const available = monthly * 0.35; // Mock: 35% of monthly yield currently available
+    // Sync with on-chain data if available
+    const available = onChainEarnings ? Number(formatEther(onChainEarnings)) : (monthly * 0.35);
 
     setState(prev => ({
       ...prev,
       monthlyYield: monthly,
       availableYield: available,
+      isLinked: onChainLinked ?? prev.isLinked,
+      cardLast4: onChainLinked ? (prev.cardLast4 || "8824") : prev.cardLast4
     }));
-  }, [totalValueUsd]);
+  }, [totalValueUsd, onChainEarnings, onChainLinked]);
 
   const linkCard = useCallback(async () => {
     setState(prev => ({ ...prev, isLoading: true }));
-    
-    // Simulate OrbitX card creation/linking
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setState(prev => ({
-      ...prev,
-      isLinked: true,
-      cardLast4: "8824", // Mock card number
-      isLoading: false,
-    }));
-  }, []);
+    try {
+        if (address) {
+            await writeContractAsync({
+                address: AUREUM_VAULT_ADDRESS,
+                abi: AUREUM_VAULT_ABI,
+                functionName: "linkOrbitXCard",
+            });
+        }
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        setState(prev => ({ ...prev, isLinked: true, cardLast4: "8824" }));
+    } catch (e) {
+        console.error("Link error:", e);
+    } finally {
+        setState(prev => ({ ...prev, isLoading: false }));
+    }
+  }, [address, writeContractAsync]);
 
   const spendEarnings = useCallback(async (amount: number) => {
     if (amount > state.availableYield) {
@@ -55,18 +83,27 @@ export function useOrbitX(totalValueUsd: number) {
     }
 
     setState(prev => ({ ...prev, isLoading: true }));
-    
-    // Simulate OrbitX spend trigger
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setState(prev => ({
-        ...prev,
-        availableYield: prev.availableYield - amount,
-        isLoading: false,
-    }));
-
-    alert(`Successfully spent $${amount.toFixed(2)} via OrbitX Card! No off-ramping required.`);
-  }, [state.availableYield]);
+    try {
+        if (address) {
+            await writeContractAsync({
+                address: AUREUM_VAULT_ADDRESS,
+                abi: AUREUM_VAULT_ABI,
+                functionName: "spendViaOrbitX",
+                args: [parseEther(amount.toString()), "8824"],
+            });
+        }
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setState(prev => ({
+            ...prev,
+            availableYield: prev.availableYield - amount,
+        }));
+        alert(`Successfully spent $${amount.toFixed(2)} via OrbitX Card!`);
+    } catch (e) {
+        console.error("Spend error:", e);
+    } finally {
+        setState(prev => ({ ...prev, isLoading: false }));
+    }
+  }, [state.availableYield, address, writeContractAsync]);
 
   return { ...state, linkCard, spendEarnings };
 }
